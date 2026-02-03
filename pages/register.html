@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register Online | DoctorCon Kolkata 2026</title>
+  <meta name="description" content="Register for DoctorCon Kolkata 2026. Join 1,200+ clinicians for three days of learning and connection." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            warm: {
+              cream: '#FDF8F3',
+              sand: '#F5EBE0',
+              terracotta: '#C8553D',
+              coral: '#E07A5F',
+              sage: '#4A7C59',
+              forest: '#2D5A3D',
+              gold: '#D4A574',
+              bronze: '#A67C52',
+              charcoal: '#2C2C2C',
+              ink: '#1A1A1A'
+            }
+          },
+          fontFamily: {
+            sans: ['Montserrat', 'system-ui', 'sans-serif'],
+            display: ['Space Grotesk', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="font-sans text-warm-charcoal bg-warm-cream">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="flex items-center gap-4">
+        <div class="logo-mark">DC</div>
+        <div class="hidden sm:block">
+          <p class="text-[10px] uppercase tracking-[0.25em] text-warm-bronze">Kolkata 2026</p>
+          <p class="font-display font-bold text-warm-charcoal">DoctorCon</p>
+        </div>
+      </a>
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="program.html" class="nav-link">Program</a>
+        <a href="committee.html" class="nav-link">Committee</a>
+        <a href="tariff.html" class="nav-link">Tariff</a>
+        <a href="submit.html" class="nav-link">Submit</a>
+        <a href="sponsorship.html" class="nav-link">Sponsors</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="register.html" class="btn-primary">Register</a>
+      </nav>
+      <button class="menu-button lg:hidden" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-drawer lg:hidden">
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="program.html">Program</a>
+        <a href="committee.html">Committee</a>
+        <a href="tariff.html">Tariff</a>
+        <a href="submit.html">Submit Abstract</a>
+        <a href="sponsorship.html">Sponsors</a>
+        <a href="contact.html">Contact</a>
+        <a href="register.html" class="btn-primary">Register Now</a>
+      </nav>
+    </div>
+  </header>
+  <div class="menu-overlay lg:hidden"></div>
+
+  <main>
+    <!-- Hero Banner -->
+    <section class="hero-banner" style="background-image: url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1920&q=80');">
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+        <div class="banner-content max-w-3xl">
+          <p class="eyebrow text-warm-gold mb-4">Secure Your Spot</p>
+          <h1 class="banner-title">Register Online</h1>
+          <p class="banner-subtitle">
+            Join 1,200+ clinicians, researchers, and healthcare leaders for three days of 
+            learning, connection, and celebration in Kolkata.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="py-20 lg:py-28 bg-warm-cream">
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+        <div class="grid lg:grid-cols-[1fr_400px] gap-16 items-start">
+          <!-- Form -->
+          <div class="reveal">
+            <div class="form-shell">
+              <div class="mb-8">
+                <h2 class="font-display text-2xl font-bold text-warm-charcoal">Registration Form</h2>
+                <p class="text-warm-charcoal/60 mt-2">
+                  This is a static form. Connect your backend or Google Form to make it functional.
+                </p>
+              </div>
+              
+              <form class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label class="form-label">Full Name *</label>
+                    <input type="text" class="form-input" placeholder="Dr. Ananya Sen" required />
+                  </div>
+                  <div>
+                    <label class="form-label">Email Address *</label>
+                    <input type="email" class="form-input" placeholder="you@hospital.org" required />
+                  </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label class="form-label">Phone Number *</label>
+                    <input type="tel" class="form-input" placeholder="+91 98300 XXXXX" required />
+                  </div>
+                  <div>
+                    <label class="form-label">Designation *</label>
+                    <select class="form-input" required>
+                      <option value="">Select your role</option>
+                      <option value="consultant">Consultant</option>
+                      <option value="resident">Resident / PG Trainee</option>
+                      <option value="student">Medical Student</option>
+                      <option value="researcher">Researcher</option>
+                      <option value="industry">Industry Professional</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label class="form-label">Institution / Hospital *</label>
+                    <input type="text" class="form-input" placeholder="SSKM Hospital, Kolkata" required />
+                  </div>
+                  <div>
+                    <label class="form-label">Specialization</label>
+                    <input type="text" class="form-input" placeholder="Internal Medicine, Cardiology..." />
+                  </div>
+                </div>
+                
+                <div>
+                  <label class="form-label">Registration Category *</label>
+                  <div class="grid md:grid-cols-3 gap-4 mt-2">
+                    <label class="flex items-center gap-3 p-4 border-2 border-warm-charcoal/10 rounded-xl cursor-pointer hover:border-warm-terracotta/50 transition-colors">
+                      <input type="radio" name="category" value="student" class="w-4 h-4 text-warm-terracotta" />
+                      <div>
+                        <p class="font-semibold text-warm-charcoal">Student</p>
+                        <p class="text-sm text-warm-charcoal/60">₹2,000</p>
+                      </div>
+                    </label>
+                    <label class="flex items-center gap-3 p-4 border-2 border-warm-terracotta rounded-xl cursor-pointer bg-warm-terracotta/5">
+                      <input type="radio" name="category" value="consultant" class="w-4 h-4 text-warm-terracotta" checked />
+                      <div>
+                        <p class="font-semibold text-warm-charcoal">Consultant</p>
+                        <p class="text-sm text-warm-charcoal/60">₹6,800</p>
+                      </div>
+                    </label>
+                    <label class="flex items-center gap-3 p-4 border-2 border-warm-charcoal/10 rounded-xl cursor-pointer hover:border-warm-terracotta/50 transition-colors">
+                      <input type="radio" name="category" value="resident" class="w-4 h-4 text-warm-terracotta" />
+                      <div>
+                        <p class="font-semibold text-warm-charcoal">Resident</p>
+                        <p class="text-sm text-warm-charcoal/60">₹3,500</p>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                
+                <div>
+                  <label class="form-label">Areas of Interest</label>
+                  <textarea class="form-input" rows="3" placeholder="Clinical sessions, AI/Digital health, Community medicine, Workshops..."></textarea>
+                </div>
+                
+                <div>
+                  <label class="form-label">Workshop Preferences</label>
+                  <div class="space-y-3 mt-2">
+                    <label class="flex items-center gap-3">
+                      <input type="checkbox" class="w-4 h-4 text-warm-terracotta rounded" />
+                      <span class="text-sm text-warm-charcoal">POCUS Skill Lab (Day 1)</span>
+                    </label>
+                    <label class="flex items-center gap-3">
+                      <input type="checkbox" class="w-4 h-4 text-warm-terracotta rounded" />
+                      <span class="text-sm text-warm-charcoal">Clinical Prompt Engineering (Day 2)</span>
+                    </label>
+                    <label class="flex items-center gap-3">
+                      <input type="checkbox" class="w-4 h-4 text-warm-terracotta rounded" />
+                      <span class="text-sm text-warm-charcoal">AI Triage Systems Demo (Day 2)</span>
+                    </label>
+                  </div>
+                </div>
+                
+                <div class="border-t border-warm-charcoal/10 pt-6">
+                  <label class="flex items-start gap-3">
+                    <input type="checkbox" class="w-4 h-4 text-warm-terracotta rounded mt-1" required />
+                    <span class="text-sm text-warm-charcoal/70">
+                      I agree to receive conference updates, CME information, and related communications. 
+                      I understand I can unsubscribe at any time.
+                    </span>
+                  </label>
+                </div>
+                
+                <button type="submit" class="btn-primary w-full justify-center">
+                  Submit Registration
+                  <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                  </svg>
+                </button>
+                
+                <p class="text-xs text-warm-charcoal/50 text-center">
+                  After submission, you'll receive payment instructions via email. Registration confirmed upon payment.
+                </p>
+              </form>
+            </div>
+          </div>
+          
+          <!-- Sidebar -->
+          <div class="space-y-6 reveal">
+            <div class="panel-card bg-warm-forest text-white">
+              <p class="text-warm-gold text-sm font-semibold mb-2">Early Bird Deadline</p>
+              <p class="font-display text-3xl font-bold">15 April 2026</p>
+              <p class="text-white/70 text-sm mt-2">Save up to 20% with early registration</p>
+            </div>
+            
+            <div class="panel-card">
+              <h3 class="font-display font-bold text-warm-charcoal mb-4">What's Included</h3>
+              <ul class="space-y-3 text-sm text-warm-charcoal/70">
+                <li class="flex items-center gap-3">
+                  <svg class="w-5 h-5 text-warm-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  All scientific sessions
+                </li>
+                <li class="flex items-center gap-3">
+                  <svg class="w-5 h-5 text-warm-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  Conference materials
+                </li>
+                <li class="flex items-center gap-3">
+                  <svg class="w-5 h-5 text-warm-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  CME credits
+                </li>
+                <li class="flex items-center gap-3">
+                  <svg class="w-5 h-5 text-warm-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  Lunch & refreshments
+                </li>
+                <li class="flex items-center gap-3">
+                  <svg class="w-5 h-5 text-warm-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  Networking events
+                </li>
+              </ul>
+            </div>
+            
+            <div class="panel-card">
+              <h3 class="font-display font-bold text-warm-charcoal mb-4">Need Help?</h3>
+              <p class="text-sm text-warm-charcoal/70 mb-4">
+                Questions about registration or group bookings?
+              </p>
+              <div class="space-y-2 text-sm">
+                <p><span class="text-warm-coral font-medium">Email:</span> connect@doctorcon.in</p>
+                <p><span class="text-warm-coral font-medium">Phone:</span> +91 98300 12345</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+      <div class="py-12 flex flex-col md:flex-row md:items-center md:justify-between gap-6 border-b border-white/10">
+        <div class="flex items-center gap-4">
+          <div class="logo-mark">DC</div>
+          <div>
+            <p class="font-display font-bold text-white text-xl">DoctorCon Kolkata</p>
+            <p class="text-white/60 text-sm">12-14 June 2026</p>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-6 text-sm text-white/70">
+          <a href="program.html" class="hover:text-warm-gold transition-colors">Program</a>
+          <a href="register.html" class="hover:text-warm-gold transition-colors">Register</a>
+          <a href="contact.html" class="hover:text-warm-gold transition-colors">Contact</a>
+        </div>
+      </div>
+      <div class="py-6 text-center text-white/50 text-sm">
+        © 2026 DoctorCon Kolkata. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
