@@ -81,18 +81,48 @@
   <main>
     <!-- Hero Banner -->
     <section class="hero-banner relative overflow-hidden">
-      <div class="absolute inset-0 bg-gradient-to-br from-warm-forest via-warm-charcoal to-warm-terracotta"></div>
-      <div class="hero-overlay absolute inset-0"></div>
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
-        <div class="banner-content max-w-3xl">
-          <p class="eyebrow text-warm-gold mb-3 sm:mb-4 text-xs sm:text-sm">The Visionaries</p>
-          <h1 class="banner-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl">Organising Committee</h1>
-          <p class="banner-subtitle text-base sm:text-lg mt-4 sm:mt-6 text-white/85 max-w-xl">
-            Meet the distinguished spine surgeons leading SSWBCON 2026 - a team dedicated to advancing spine care excellence in Bengal.
-          </p>
+      <picture class="banner-bg">
+        <source media="(max-width: 768px)" srcset="../images/banners/comitee_ill_mob_3.jpeg">
+        <img src="../images/banners/comitee_ill_3.jpeg" alt="Committee Banner" loading="eager">
+      </picture>
+      <div class="banner-content-wrapper">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+          <div class="banner-content max-w-3xl">
+            <p class="eyebrow text-warm-gold mb-3 sm:mb-4 text-xs sm:text-sm">The Visionaries</p>
+            <h1 class="banner-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl">Organising Committee</h1>
+            <p class="banner-subtitle text-base sm:text-lg mt-4 sm:mt-6 text-white/85 max-w-xl">
+              Meet the distinguished spine surgeons leading SSWBCON 2026 - a team dedicated to advancing spine care excellence in Bengal.
+            </p>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- Marquee -->
+    <div class="page-marquee">
+      <div class="page-marquee-content">
+        <span class="page-marquee-item">🎯 Early Bird Ends May 31, 2026</span>
+        <span class="page-marquee-divider"></span>
+        <span class="page-marquee-item">📍 Kolkata Convention Centre</span>
+        <span class="page-marquee-divider"></span>
+        <span class="page-marquee-item">🏆 Best Paper Awards Worth ₹50,000</span>
+        <span class="page-marquee-divider"></span>
+        <span class="page-marquee-item">🔬 4 Hands-On Workshops</span>
+        <span class="page-marquee-divider"></span>
+        <span class="page-marquee-item">👥 500+ Spine Surgeons Expected</span>
+        <span class="page-marquee-divider"></span>
+        <span class="page-marquee-item">🎯 Early Bird Ends May 31, 2026</span>
+        <span class="page-marquee-divider"></span>
+        <span class="page-marquee-item">📍 Kolkata Convention Centre</span>
+        <span class="page-marquee-divider"></span>
+        <span class="page-marquee-item">🏆 Best Paper Awards Worth ₹50,000</span>
+        <span class="page-marquee-divider"></span>
+        <span class="page-marquee-item">🔬 4 Hands-On Workshops</span>
+        <span class="page-marquee-divider"></span>
+        <span class="page-marquee-item">👥 500+ Spine Surgeons Expected</span>
+        <span class="page-marquee-divider"></span>
+      </div>
+    </div>
 
     <!-- Patrons Section -->
     <section class="py-12 sm:py-16 lg:py-24 bg-warm-cream">
@@ -103,25 +133,38 @@
             <div class="w-1 h-8 sm:h-10 bg-warm-gold rounded-full"></div>
             <h2 class="font-display text-xl sm:text-2xl lg:text-3xl font-bold text-warm-ink">Patrons</h2>
           </div>
-          <div class="grid sm:grid-cols-2 gap-4 sm:gap-6">
-            <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-sm flex items-center gap-4 sm:gap-6 hover:shadow-md transition-shadow">
-              <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-xl overflow-hidden flex-shrink-0 bg-warm-sand">
+          <div class="grid grid-cols-2 sm:grid-cols-2 gap-3 sm:gap-6">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-5 group">
+              <div class="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 bg-warm-sand border border-warm-sand shadow-inner group-hover:scale-105 transition-transform duration-300">
                 <img src="../images/speakers/kunalsengupta.png" alt="Dr. Kunal Sengupta" class="w-full h-full object-cover">
               </div>
-              <div class="min-w-0">
-                <h3 class="font-display font-bold text-warm-ink text-base sm:text-lg">Dr. Kunal Sengupta</h3>
-                <p class="text-warm-terracotta text-sm font-medium">Past President, SSWB</p>
-                <p class="text-warm-charcoal/60 text-xs sm:text-sm mt-1 truncate">senguptak186@gmail.com</p>
+              <div class="flex-1 min-w-0 flex flex-col justify-center gap-1.5 w-full">
+                <div>
+                  <h3 class="font-display font-bold text-warm-ink text-lg leading-tight">Dr. Kunal Sengupta</h3>
+                  <p class="text-warm-terracotta text-xs font-semibold tracking-wide uppercase mt-0.5">Past President, SSWB</p>
+                </div>
+                <div class="mt-1 pt-2 border-t border-warm-sand/30 flex items-center justify-center sm:justify-start gap-1.5">
+                  <svg class="w-3.5 h-3.5 text-warm-charcoal/40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                  <a href="mailto:senguptak186@gmail.com" class="text-warm-charcoal/70 text-xs hover:text-warm-terracotta transition-colors truncate">senguptak186@gmail.com</a>
+                </div>
               </div>
             </div>
-            <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-sm flex items-center gap-4 sm:gap-6 hover:shadow-md transition-shadow">
-              <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-xl overflow-hidden flex-shrink-0 bg-warm-sand">
+            
+            <!-- Card 2 -->
+            <div class="bg-white rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-5 group">
+              <div class="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 bg-warm-sand border border-warm-sand shadow-inner group-hover:scale-105 transition-transform duration-300">
                 <img src="../images/speakers/saumyajitbasu.png" alt="Dr. Saumyajit Basu" class="w-full h-full object-cover">
               </div>
-              <div class="min-w-0">
-                <h3 class="font-display font-bold text-warm-ink text-base sm:text-lg">Dr. Saumyajit Basu</h3>
-                <p class="text-warm-terracotta text-sm font-medium">Imm. Past President, SSWB</p>
-                <p class="text-warm-charcoal/60 text-xs sm:text-sm mt-1 truncate">saumyajitbasu@hotmail.com</p>
+              <div class="flex-1 min-w-0 flex flex-col justify-center gap-1.5 w-full">
+                <div>
+                  <h3 class="font-display font-bold text-warm-ink text-lg leading-tight">Dr. Saumyajit Basu</h3>
+                  <p class="text-warm-terracotta text-xs font-semibold tracking-wide uppercase mt-0.5">Imm. Past President, SSWB</p>
+                </div>
+                <div class="mt-1 pt-2 border-t border-warm-sand/30 flex items-center justify-center sm:justify-start gap-1.5">
+                  <svg class="w-3.5 h-3.5 text-warm-charcoal/40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                  <a href="mailto:saumyajitbasu@hotmail.com" class="text-warm-charcoal/70 text-xs hover:text-warm-terracotta transition-colors truncate">saumyajitbasu@hotmail.com</a>
+                </div>
               </div>
             </div>
           </div>
@@ -133,25 +176,38 @@
             <div class="w-1 h-8 sm:h-10 bg-warm-terracotta rounded-full"></div>
             <h2 class="font-display text-xl sm:text-2xl lg:text-3xl font-bold text-warm-ink">Co-Organising Chairmen</h2>
           </div>
-          <div class="grid sm:grid-cols-2 gap-4 sm:gap-6">
-            <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-sm flex items-center gap-4 sm:gap-6 hover:shadow-md transition-shadow">
-              <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-xl overflow-hidden flex-shrink-0 bg-warm-sand">
+          <div class="grid grid-cols-2 sm:grid-cols-2 gap-3 sm:gap-6">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-5 group">
+              <div class="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 bg-warm-sand border border-warm-sand shadow-inner group-hover:scale-105 transition-transform duration-300">
                 <img src="../images/speakers/abrarahmed.png" alt="Dr. Abrar Ahmed" class="w-full h-full object-cover">
               </div>
-              <div class="min-w-0">
-                <h3 class="font-display font-bold text-warm-ink text-base sm:text-lg">Dr. Abrar Ahmed</h3>
-                <p class="text-warm-terracotta text-sm font-medium">President, SSWB</p>
-                <p class="text-warm-charcoal/60 text-xs sm:text-sm mt-1 truncate">abrarortho@yahoo.co.in</p>
+              <div class="flex-1 min-w-0 flex flex-col justify-center gap-1.5 w-full">
+                <div>
+                  <h3 class="font-display font-bold text-warm-ink text-lg leading-tight">Dr. Abrar Ahmed</h3>
+                  <p class="text-warm-terracotta text-xs font-semibold tracking-wide uppercase mt-0.5">President, SSWB</p>
+                </div>
+                <div class="mt-1 pt-2 border-t border-warm-sand/30 flex items-center justify-center sm:justify-start gap-1.5">
+                  <svg class="w-3.5 h-3.5 text-warm-charcoal/40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                  <a href="mailto:abrarortho@yahoo.co.in" class="text-warm-charcoal/70 text-xs hover:text-warm-terracotta transition-colors truncate">abrarortho@yahoo.co.in</a>
+                </div>
               </div>
             </div>
-            <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-sm flex items-center gap-4 sm:gap-6 hover:shadow-md transition-shadow">
-              <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-xl overflow-hidden flex-shrink-0 bg-warm-sand">
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-5 group">
+              <div class="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 bg-warm-sand border border-warm-sand shadow-inner group-hover:scale-105 transition-transform duration-300">
                 <img src="../images/speakers/kirankumarmukhopadhyay.png" alt="Dr. Kiran Kumar Mukhopadhyay" class="w-full h-full object-cover">
               </div>
-              <div class="min-w-0">
-                <h3 class="font-display font-bold text-warm-ink text-base sm:text-lg">Dr. Kiran Kumar Mukhopadhyay</h3>
-                <p class="text-warm-terracotta text-sm font-medium">Executive Committee, SSWB</p>
-                <p class="text-warm-charcoal/60 text-xs sm:text-sm mt-1 truncate">orthokiran@gmail.com</p>
+              <div class="flex-1 min-w-0 flex flex-col justify-center gap-1.5 w-full">
+                <div>
+                  <h3 class="font-display font-bold text-warm-ink text-lg leading-tight">Dr. Kiran Kumar Mukhopadhyay</h3>
+                  <p class="text-warm-terracotta text-xs font-semibold tracking-wide uppercase mt-0.5">Executive Committee, SSWB</p>
+                </div>
+                <div class="mt-1 pt-2 border-t border-warm-sand/30 flex items-center justify-center sm:justify-start gap-1.5">
+                  <svg class="w-3.5 h-3.5 text-warm-charcoal/40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                  <a href="mailto:orthokiran@gmail.com" class="text-warm-charcoal/70 text-xs hover:text-warm-terracotta transition-colors truncate">orthokiran@gmail.com</a>
+                </div>
               </div>
             </div>
           </div>
@@ -163,25 +219,38 @@
             <div class="w-1 h-8 sm:h-10 bg-warm-sage rounded-full"></div>
             <h2 class="font-display text-xl sm:text-2xl lg:text-3xl font-bold text-warm-ink">Co-Organising Secretaries</h2>
           </div>
-          <div class="grid sm:grid-cols-2 gap-4 sm:gap-6">
-            <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-sm flex items-center gap-4 sm:gap-6 hover:shadow-md transition-shadow">
-              <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-xl overflow-hidden flex-shrink-0 bg-warm-sand">
+          <div class="grid grid-cols-2 sm:grid-cols-2 gap-3 sm:gap-6">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-5 group">
+              <div class="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 bg-warm-sand border border-warm-sand shadow-inner group-hover:scale-105 transition-transform duration-300">
                 <img src="../images/speakers/dineshkumarjaiswal.png" alt="Dr. Dinesh Kumar Jaiswal" class="w-full h-full object-cover">
               </div>
-              <div class="min-w-0">
-                <h3 class="font-display font-bold text-warm-ink text-base sm:text-lg">Dr. Dinesh Kumar Jaiswal</h3>
-                <p class="text-warm-terracotta text-sm font-medium">Secretary, SSWB</p>
-                <p class="text-warm-charcoal/60 text-xs sm:text-sm mt-1 truncate">drdkj12@gmail.com</p>
+              <div class="flex-1 min-w-0 flex flex-col justify-center gap-1.5 w-full">
+                <div>
+                  <h3 class="font-display font-bold text-warm-ink text-lg leading-tight">Dr. Dinesh Kumar Jaiswal</h3>
+                  <p class="text-warm-terracotta text-xs font-semibold tracking-wide uppercase mt-0.5">Secretary, SSWB</p>
+                </div>
+                <div class="mt-1 pt-2 border-t border-warm-sand/30 flex items-center justify-center sm:justify-start gap-1.5">
+                  <svg class="w-3.5 h-3.5 text-warm-charcoal/40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                  <a href="mailto:drdkj12@gmail.com" class="text-warm-charcoal/70 text-xs hover:text-warm-terracotta transition-colors truncate">drdkj12@gmail.com</a>
+                </div>
               </div>
             </div>
-            <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-sm flex items-center gap-4 sm:gap-6 hover:shadow-md transition-shadow">
-              <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-xl overflow-hidden flex-shrink-0 bg-warm-sand">
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-5 group">
+              <div class="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 bg-warm-sand border border-warm-sand shadow-inner group-hover:scale-105 transition-transform duration-300">
                 <img src="../images/speakers/chinmaynath.png" alt="Dr. Chinmay Nath" class="w-full h-full object-cover">
               </div>
-              <div class="min-w-0">
-                <h3 class="font-display font-bold text-warm-ink text-base sm:text-lg">Dr. Chinmay Nath</h3>
-                <p class="text-warm-terracotta text-sm font-medium">Joint Secretary, SSWB</p>
-                <p class="text-warm-charcoal/60 text-xs sm:text-sm mt-1 truncate">chinmayortho@gmail.com</p>
+              <div class="flex-1 min-w-0 flex flex-col justify-center gap-1.5 w-full">
+                <div>
+                  <h3 class="font-display font-bold text-warm-ink text-lg leading-tight">Dr. Chinmay Nath</h3>
+                  <p class="text-warm-terracotta text-xs font-semibold tracking-wide uppercase mt-0.5">Joint Secretary, SSWB</p>
+                </div>
+                <div class="mt-1 pt-2 border-t border-warm-sand/30 flex items-center justify-center sm:justify-start gap-1.5">
+                  <svg class="w-3.5 h-3.5 text-warm-charcoal/40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                  <a href="mailto:chinmayortho@gmail.com" class="text-warm-charcoal/70 text-xs hover:text-warm-terracotta transition-colors truncate">chinmayortho@gmail.com</a>
+                </div>
               </div>
             </div>
           </div>
