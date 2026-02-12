@@ -14,6 +14,7 @@
     tailwind.config = {
       theme: {
         extend: {
+          screens: { nav: '1170px' },
           colors: {
             warm: {
               cream: '#FDF8F3',
@@ -49,34 +50,90 @@
           <p class="font-display font-bold text-warm-charcoal text-sm">SSWBCON</p>
         </div>
       </a>
-      <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-sm font-medium">
+      <nav class="hidden nav:flex items-center gap-6 xl:gap-8 text-sm font-medium">
         <a href="../index.html" class="nav-link">Home</a>
-        <a href="program.html" class="nav-link">Program</a>
-        <a href="committee.html" class="nav-link is-active">Committee</a>
-        <a href="tariff.html" class="nav-link">Tariff</a>
-        <a href="submit.html" class="nav-link">Abstract</a>
-        <a href="sponsorship.html" class="nav-link">Sponsors</a>
+        <div class="nav-dropdown">
+          <a href="committee.html" class="nav-link is-active">About
+            <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="about.html">About SSWB</a>
+            <a href="about.html#presidents-desk">President's Desk</a>
+            <a href="committee.html" class="is-active">Organising Committee</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="program.html" class="nav-link">Scientific Program
+            <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="program.html">Program Schedule</a>
+            <a href="submit.html">Submit Abstract</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="tariff.html" class="nav-link">Registration
+            <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="tariff.html">Registration Tariff</a>
+            <a href="register.html">Register Online</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="sponsorship.html" class="nav-link">Sponsorship
+            <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="sponsorship.html">Sponsorship Tariff</a>
+            <a href="floorplan.html">Stall Allocation Plan</a>
+          </div>
+        </div>
         <a href="contact.html" class="nav-link">Contact</a>
         <a href="register.html" class="btn-primary">Register</a>
       </nav>
-      <button class="menu-button lg:hidden" aria-label="Toggle menu">
+      <button class="menu-button nav:hidden" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <div class="mobile-drawer lg:hidden">
+    <div class="mobile-drawer nav:hidden">
       <nav>
         <a href="../index.html">Home</a>
-        <a href="program.html">Program</a>
-        <a href="committee.html">Committee</a>
-        <a href="tariff.html">Tariff</a>
-        <a href="submit.html">Submit Abstract</a>
-        <a href="sponsorship.html">Sponsors</a>
+        <div class="mobile-nav-group">
+          <button class="mobile-nav-toggle">About <svg class="toggle-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
+          <div class="mobile-nav-submenu">
+            <a href="about.html">About SSWB</a>
+            <a href="about.html#presidents-desk">President's Desk</a>
+            <a href="committee.html">Organising Committee</a>
+          </div>
+        </div>
+        <div class="mobile-nav-group">
+          <button class="mobile-nav-toggle">Scientific Program <svg class="toggle-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
+          <div class="mobile-nav-submenu">
+            <a href="program.html">Program Schedule</a>
+            <a href="submit.html">Submit Abstract</a>
+          </div>
+        </div>
+        <div class="mobile-nav-group">
+          <button class="mobile-nav-toggle">Registration <svg class="toggle-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
+          <div class="mobile-nav-submenu">
+            <a href="tariff.html">Registration Tariff</a>
+            <a href="register.html">Register Online</a>
+          </div>
+        </div>
+        <div class="mobile-nav-group">
+          <button class="mobile-nav-toggle">Sponsorship <svg class="toggle-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
+          <div class="mobile-nav-submenu">
+            <a href="sponsorship.html">Sponsorship Tariff</a>
+            <a href="floorplan.html">Stall Allocation Plan</a>
+          </div>
+        </div>
         <a href="contact.html">Contact</a>
         <a href="register.html" class="btn-primary">Register Now</a>
       </nav>
     </div>
   </header>
-  <div class="menu-overlay lg:hidden"></div>
+  <div class="menu-overlay nav:hidden"></div>
 
   <main>
     <!-- Hero Banner -->
@@ -101,7 +158,7 @@
     <!-- Marquee -->
     <div class="page-marquee">
       <div class="page-marquee-content">
-        <span class="page-marquee-item">🎯 Early Bird Ends May 31, 2026</span>
+  <span class="page-marquee-item">🔬 Cadaveric Workshop Available</span>
         <span class="page-marquee-divider"></span>
         <span class="page-marquee-item">📍 Kolkata Convention Centre</span>
         <span class="page-marquee-divider"></span>
@@ -111,7 +168,7 @@
         <span class="page-marquee-divider"></span>
         <span class="page-marquee-item">👥 500+ Spine Surgeons Expected</span>
         <span class="page-marquee-divider"></span>
-        <span class="page-marquee-item">🎯 Early Bird Ends May 31, 2026</span>
+  <span class="page-marquee-item">🔬 Cadaveric Workshop Available</span>
         <span class="page-marquee-divider"></span>
         <span class="page-marquee-item">📍 Kolkata Convention Centre</span>
         <span class="page-marquee-divider"></span>
@@ -127,6 +184,8 @@
     <!-- Patrons Section -->
     <section class="py-12 sm:py-16 lg:py-24 bg-warm-cream">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div class="lg:grid lg:grid-cols-3 lg:gap-12">
+          <div class="lg:col-span-2">
         <!-- Patrons -->
         <div class="mb-12 lg:mb-16 reveal">
           <div class="flex items-center gap-3 mb-6 sm:mb-8">
@@ -255,6 +314,27 @@
             </div>
           </div>
         </div>
+          </div><!-- /lg:col-span-2 -->
+
+          <!-- Sidebar (desktop only) -->
+          <div class="hidden lg:block sponsor-sidebar">
+            <div class="space-y-6">
+              <div class="bg-white rounded-2xl p-6 shadow-sm border border-warm-charcoal/5 reveal">
+                <h3 class="font-display font-bold text-warm-ink mb-4">SSWBCON 2026 Highlights</h3>
+                <ul class="space-y-3 text-sm text-warm-charcoal/80">
+                  <li class="flex items-start gap-3"><span>📅</span><span><strong>Date:</strong> June 20–22, 2026</span></li>
+                  <li class="flex items-start gap-3"><span>📍</span><span><strong>Venue:</strong> Kolkata Convention Centre</span></li>
+                  <li class="flex items-start gap-3"><span>🎤</span><span><strong>Speakers:</strong> 30+ National & International</span></li>
+                  <li class="flex items-start gap-3"><span>🔬</span><span><strong>Workshops:</strong> 4 Hands-On Sessions</span></li>
+                  <li class="flex items-start gap-3"><span>🏆</span><span><strong>Awards:</strong> Best Paper ₹50,000</span></li>
+                </ul>
+                <a href="register.html" class="btn-primary w-full text-center mt-6 block text-sm">Register Now</a>
+              </div>
+              <div class="sidebar-ad-block reveal">
+                <div class="ad-placeholder"><a href="sponsorship.html" aria-label="Sponsor ad space"><img src="../images/ads/sponsor-placeholder.svg" alt="Sponsor Ad Space" loading="lazy"></a></div></div>
+            </div>
+          </div>
+        </div><!-- /lg:grid -->
       </div>
     </section>
 
@@ -580,7 +660,38 @@
         </div>
       </div>
     </section>
+
   </main>
+
+  <!-- Mobile Sponsor Panel -->
+  <button class="sponsor-panel-trigger lg:hidden" aria-label="View sponsorship info">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+    Highlights
+  </button>
+  <div class="sponsor-panel-overlay"></div>
+  <div class="sponsor-panel-drawer">
+    <div class="sponsor-panel-drawer-header">
+      <h3>Sponsorship & Highlights</h3>
+      <button class="sponsor-panel-close" aria-label="Close panel">
+        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="sponsor-panel-body">
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-warm-charcoal/5 mb-4">
+        <h4 class="font-display font-bold text-warm-ink mb-3 text-sm">SSWBCON 2026 Highlights</h4>
+        <ul class="space-y-2.5 text-sm text-warm-charcoal/80">
+          <li class="flex items-start gap-2.5"><span>📅</span><span><strong>Date:</strong> June 20–22, 2026</span></li>
+          <li class="flex items-start gap-2.5"><span>📍</span><span><strong>Venue:</strong> Kolkata Convention Centre</span></li>
+          <li class="flex items-start gap-2.5"><span>🎤</span><span><strong>Speakers:</strong> 30+ Faculty</span></li>
+          <li class="flex items-start gap-2.5"><span>🔬</span><span><strong>Workshops:</strong> 4 Hands-On</span></li>
+          <li class="flex items-start gap-2.5"><span>🏆</span><span><strong>Awards:</strong> ₹50,000</span></li>
+        </ul>
+        <a href="register.html" class="btn-primary w-full text-center mt-4 block text-sm">Register Now</a>
+      </div>
+      <div class="sidebar-ad-block">
+        <div class="ad-placeholder"><a href="sponsorship.html" aria-label="Sponsor ad space"><img src="../images/ads/sponsor-placeholder.svg" alt="Sponsor Ad Space" loading="lazy"></a></div></div>
+    </div>
+  </div>
 
   <footer class="bg-warm-ink text-white py-10 sm:py-12 lg:py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
@@ -625,7 +736,13 @@
       </div>
       <div class="border-t border-white/10 mt-8 sm:mt-10 lg:mt-12 pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
         <p class="text-sm text-white/50">© 2026 SSWBCON. All rights reserved.</p>
-        <a href="https://sswb.in/" target="_blank" rel="noopener" class="text-sm text-warm-gold hover:text-white transition-colors">Spine Society of West Bengal</a>
+        <div class="flex items-center gap-4 text-sm text-white/50">
+          <a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+          <span>|</span>
+          <a href="refund-policy.html" class="hover:text-white transition-colors">Refund & Cancellation</a>
+          <span>|</span>
+          <a href="https://sswb.in/" target="_blank" rel="noopener" class="text-warm-gold hover:text-white transition-colors">SSWB</a>
+        </div>
       </div>
     </div>
   </footer>

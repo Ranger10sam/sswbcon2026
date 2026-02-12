@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stall Allocation Plan | SSWBCON 2026</title>
+  <meta name="description" content="View the stall allocation floor plan for SSWBCON 2026. Zoom in to see booth locations and available exhibition spaces.">
+  <meta name="keywords" content="SSWBCON 2026, Stall Allocation, Floor Plan, Exhibition, Booth">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          screens: { nav: '1170px' },
+          colors: {
+            warm: {
+              cream: '#FDF8F3',
+              sand: '#F5EBE0',
+              terracotta: '#C8553D',
+              coral: '#E07A5F',
+              sage: '#4A7C59',
+              forest: '#2D5A3D',
+              gold: '#D4A574',
+              bronze: '#A67C52',
+              charcoal: '#2C2C2C',
+              ink: '#1A1A1A'
+            }
+          },
+          fontFamily: {
+            sans: ['Montserrat', 'system-ui', 'sans-serif'],
+            display: ['Space Grotesk', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="font-sans text-warm-charcoal bg-warm-cream">
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="flex items-center gap-3">
+        <img src="../images/logo.jpeg" alt="SSWBCON 2026" class="h-10 sm:h-12 w-auto rounded-lg">
+        <div class="hidden sm:block">
+          <p class="text-[10px] uppercase tracking-[0.2em] text-warm-bronze">Kolkata 2026</p>
+          <p class="font-display font-bold text-warm-charcoal text-sm">SSWBCON</p>
+        </div>
+      </a>
+      <nav class="hidden nav:flex items-center gap-6 xl:gap-8 text-sm font-medium">
+        <a href="../index.html" class="nav-link">Home</a>
+        <div class="nav-dropdown">
+          <a href="committee.html" class="nav-link">About
+            <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="about.html">About SSWB</a>
+            <a href="about.html#presidents-desk">President's Desk</a>
+            <a href="committee.html">Organising Committee</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="program.html" class="nav-link">Scientific Program
+            <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="program.html">Program Schedule</a>
+            <a href="submit.html">Submit Abstract</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="tariff.html" class="nav-link">Registration
+            <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="tariff.html">Registration Tariff</a>
+            <a href="register.html">Register Online</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="sponsorship.html" class="nav-link is-active">Sponsorship
+            <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="sponsorship.html">Sponsorship Tariff</a>
+            <a href="floorplan.html" class="is-active">Stall Allocation Plan</a>
+          </div>
+        </div>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="register.html" class="btn-primary">Register</a>
+      </nav>
+      <button class="menu-button nav:hidden" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-drawer nav:hidden">
+      <nav>
+        <a href="../index.html">Home</a>
+        <div class="mobile-nav-group">
+          <button class="mobile-nav-toggle">About <svg class="toggle-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
+          <div class="mobile-nav-submenu">
+            <a href="about.html">About SSWB</a>
+            <a href="about.html#presidents-desk">President's Desk</a>
+            <a href="committee.html">Organising Committee</a>
+          </div>
+        </div>
+        <div class="mobile-nav-group">
+          <button class="mobile-nav-toggle">Scientific Program <svg class="toggle-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
+          <div class="mobile-nav-submenu">
+            <a href="program.html">Program Schedule</a>
+            <a href="submit.html">Submit Abstract</a>
+          </div>
+        </div>
+        <div class="mobile-nav-group">
+          <button class="mobile-nav-toggle">Registration <svg class="toggle-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
+          <div class="mobile-nav-submenu">
+            <a href="tariff.html">Registration Tariff</a>
+            <a href="register.html">Register Online</a>
+          </div>
+        </div>
+        <div class="mobile-nav-group">
+          <button class="mobile-nav-toggle">Sponsorship <svg class="toggle-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
+          <div class="mobile-nav-submenu">
+            <a href="sponsorship.html">Sponsorship Tariff</a>
+            <a href="floorplan.html">Stall Allocation Plan</a>
+          </div>
+        </div>
+        <a href="contact.html">Contact</a>
+        <a href="register.html" class="btn-primary">Register Now</a>
+      </nav>
+    </div>
+  </header>
+  <div class="menu-overlay nav:hidden"></div>
+
+  <main>
+    <!-- Hero Banner -->
+    <section class="hero-banner relative overflow-hidden">
+      <picture class="banner-bg">
+        <source media="(max-width: 768px)" srcset="../images/banners/sponsor_ill_mob_3.jpeg">
+        <img src="../images/banners/sponsor_ill_3.jpeg" alt="Floor Plan Banner" loading="eager">
+      </picture>
+      <div class="banner-content-wrapper">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+          <div class="banner-content max-w-3xl">
+            <p class="eyebrow text-warm-gold mb-3 sm:mb-4 text-xs sm:text-sm">Exhibition Layout</p>
+            <h1 class="banner-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl">Stall Allocation Plan</h1>
+            <p class="banner-subtitle text-base sm:text-lg mt-4 sm:mt-6 text-white/85 max-w-xl">
+              View the exhibition floor layout. Click on the plan to zoom in and explore booth locations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="page-marquee">
+      <div class="page-marquee-content">
+  <span class="page-marquee-item">🔬 Cadaveric Workshop Available</span>
+        <span class="page-marquee-divider"></span>
+        <span class="page-marquee-item">📍 Kolkata Convention Centre</span>
+        <span class="page-marquee-divider"></span>
+        <span class="page-marquee-item">🏆 Best Paper Awards Worth ₹50,000</span>
+        <span class="page-marquee-divider"></span>
+        <span class="page-marquee-item">🔬 4 Hands-On Workshops</span>
+        <span class="page-marquee-divider"></span>
+        <span class="page-marquee-item">👥 500+ Spine Surgeons Expected</span>
+        <span class="page-marquee-divider"></span>
+  <span class="page-marquee-item">🔬 Cadaveric Workshop Available</span>
+        <span class="page-marquee-divider"></span>
+        <span class="page-marquee-item">📍 Kolkata Convention Centre</span>
+        <span class="page-marquee-divider"></span>
+        <span class="page-marquee-item">🏆 Best Paper Awards Worth ₹50,000</span>
+        <span class="page-marquee-divider"></span>
+        <span class="page-marquee-item">🔬 4 Hands-On Workshops</span>
+        <span class="page-marquee-divider"></span>
+        <span class="page-marquee-item">👥 500+ Spine Surgeons Expected</span>
+        <span class="page-marquee-divider"></span>
+      </div>
+    </div>
+
+    <!-- Floor Plan Section -->
+    <section class="py-12 sm:py-16 lg:py-24 bg-warm-cream">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div class="lg:grid lg:grid-cols-3 lg:gap-12">
+          <div class="lg:col-span-2">
+        <div class="text-center mb-8 reveal">
+          <p class="eyebrow text-warm-terracotta mb-3 text-xs sm:text-sm">Venue Layout</p>
+          <h2 class="font-display text-2xl sm:text-3xl font-bold text-warm-ink mb-4">Exhibition Floor Plan</h2>
+          <p class="text-warm-charcoal/70 max-w-2xl mx-auto text-sm sm:text-base">
+            Click on the floor plan image below to open the full-screen zoomable viewer. Pinch to zoom on mobile, or use scroll wheel on desktop.
+          </p>
+        </div>
+
+        <!-- Zoomable Floor Plan Image -->
+        <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-sm border border-warm-charcoal/5 reveal">
+          <div class="relative group cursor-zoom-in image-zoomable">
+            <img 
+              src="../images/sections/plan-ff-176.png" 
+              alt="SSWBCON 2026 Stall Allocation Floor Plan – First Floor" 
+              class="w-full rounded-xl"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            >
+            <!-- Placeholder if image not found -->
+            <div class="hidden items-center justify-center bg-warm-sand rounded-xl p-12 sm:p-20 text-center">
+              <div>
+                <svg class="w-16 h-16 text-warm-bronze/30 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+                </svg>
+                <p class="font-display font-bold text-warm-ink text-lg mb-2">Floor Plan Coming Soon</p>
+                <p class="text-warm-charcoal/60 text-sm">The exhibition floor plan will be uploaded shortly. Check back soon!</p>
+              </div>
+            </div>
+            <!-- Zoom hint overlay -->
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors rounded-xl flex items-center justify-center pointer-events-none">
+              <div class="opacity-0 group-hover:opacity-100 transition-opacity bg-black/60 text-white text-sm px-4 py-2 rounded-full flex items-center gap-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+                </svg>
+                Click to zoom
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stall Directory -->
+        <div class="mt-10 reveal">
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
+            <div>
+              <p class="eyebrow text-warm-terracotta mb-2 text-xs sm:text-sm">Exhibitor Directory</p>
+              <h3 class="font-display text-xl sm:text-2xl font-bold text-warm-ink">Stall Allocation Directory</h3>
+            </div>
+            <div class="relative">
+              <input type="text" id="stallSearch" placeholder="Search stall or company…"
+                class="w-full sm:w-72 px-4 py-2.5 pl-10 rounded-full border border-warm-charcoal/10 bg-white text-sm focus:outline-none focus:border-warm-terracotta/40 focus:ring-2 focus:ring-warm-terracotta/10 transition-all">
+              <svg class="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-warm-charcoal/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Legend -->
+          <div class="flex flex-wrap gap-3 mb-4 text-xs sm:text-sm">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-warm-sage/10 text-warm-sage font-medium">
+              <span class="w-2 h-2 rounded-full bg-warm-sage"></span> Booked
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-warm-gold/15 text-warm-bronze font-medium">
+              <span class="w-2 h-2 rounded-full bg-warm-gold"></span> Available
+            </span>
+          </div>
+
+          <!-- Directory Table -->
+          <div class="bg-white rounded-2xl shadow-sm border border-warm-charcoal/5 overflow-hidden">
+            <div class="overflow-x-auto">
+              <table class="stall-directory w-full text-sm" id="stallTable">
+                <thead>
+                  <tr class="bg-warm-sand/60 text-left">
+                    <th class="px-4 sm:px-6 py-3 font-display font-bold text-warm-ink text-xs uppercase tracking-wider">Stall #</th>
+                    <th class="px-4 sm:px-6 py-3 font-display font-bold text-warm-ink text-xs uppercase tracking-wider">Company / Exhibitor</th>
+                    <th class="px-4 sm:px-6 py-3 font-display font-bold text-warm-ink text-xs uppercase tracking-wider">Tier</th>
+                    <th class="px-4 sm:px-6 py-3 font-display font-bold text-warm-ink text-xs uppercase tracking-wider text-center">Status</th>
+                  </tr>
+                </thead>
+                <tbody id="stallBody">
+                  <!-- Stall data is rendered by JS from the stallData array below -->
+                </tbody>
+              </table>
+            </div>
+            <div id="noResults" class="hidden text-center py-8 text-warm-charcoal/50 text-sm">
+              No stalls match your search.
+            </div>
+          </div>
+          <p class="text-warm-charcoal/50 text-xs mt-3 text-center">Last updated: June 2025. Contact <a href="mailto:spine@sswbcon.in" class="text-warm-terracotta hover:underline">spine@sswbcon.in</a> for availability.</p>
+        </div>
+
+        <!-- Stall Info -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 reveal">
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-warm-charcoal/5">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-4 h-4 rounded-full bg-warm-terracotta"></div>
+              <h3 class="font-display font-bold text-warm-ink">Premium Booths</h3>
+            </div>
+            <p class="text-sm text-warm-charcoal/70">Prime location near the main stage and entrance. Maximum footfall and visibility for Platinum & Gold sponsors.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-warm-charcoal/5">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-4 h-4 rounded-full bg-warm-sage"></div>
+              <h3 class="font-display font-bold text-warm-ink">Standard Booths</h3>
+            </div>
+            <p class="text-sm text-warm-charcoal/70">Well-positioned exhibition space for Silver tier sponsors. Good visibility with dedicated walkway access.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-warm-charcoal/5 sm:col-span-2 lg:col-span-1">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-4 h-4 rounded-full bg-warm-gold"></div>
+              <h3 class="font-display font-bold text-warm-ink">Exhibitor Stalls</h3>
+            </div>
+            <p class="text-sm text-warm-charcoal/70">Compact exhibition stalls for exhibitors. Ideal for product displays and delegate engagement.</p>
+          </div>
+        </div>
+
+        <!-- Contact CTA -->
+        <div class="mt-8 text-center reveal">
+          <p class="text-warm-charcoal/70 text-sm mb-4">Interested in reserving a booth? Contact our sponsorship team for availability and custom packages.</p>
+          <div class="flex flex-col sm:flex-row justify-center gap-3">
+            <a href="sponsorship.html" class="btn-primary text-sm">View Sponsorship Tiers</a>
+            <a href="mailto:spine@sswbcon.in" class="inline-flex items-center justify-center gap-2 border-2 border-warm-terracotta text-warm-terracotta font-semibold px-6 py-3 rounded-full hover:bg-warm-terracotta hover:text-white transition-colors text-sm">
+              Email Us
+            </a>
+          </div>
+        </div>
+          </div><!-- /lg:col-span-2 -->
+
+          <!-- Sidebar (desktop only) -->
+          <div class="hidden lg:block sponsor-sidebar">
+            <div class="space-y-6">
+              <div class="bg-white rounded-2xl p-6 shadow-sm border border-warm-charcoal/5 reveal">
+                <h3 class="font-display font-bold text-warm-ink mb-4">SSWBCON 2026 Highlights</h3>
+                <ul class="space-y-3 text-sm text-warm-charcoal/80">
+                  <li class="flex items-start gap-3"><span>📅</span><span><strong>Date:</strong> June 20–22, 2026</span></li>
+                  <li class="flex items-start gap-3"><span>📍</span><span><strong>Venue:</strong> Kolkata Convention Centre</span></li>
+                  <li class="flex items-start gap-3"><span>🎤</span><span><strong>Speakers:</strong> 30+ National & International</span></li>
+                  <li class="flex items-start gap-3"><span>🔬</span><span><strong>Workshops:</strong> 4 Hands-On Sessions</span></li>
+                  <li class="flex items-start gap-3"><span>🏆</span><span><strong>Awards:</strong> Best Paper ₹50,000</span></li>
+                </ul>
+                <a href="register.html" class="btn-primary w-full text-center mt-6 block text-sm">Register Now</a>
+              </div>
+              <div class="sidebar-ad-block reveal">
+                <div class="ad-placeholder"><a href="sponsorship.html" aria-label="Sponsor ad space"><img src="../images/ads/sponsor-placeholder.svg" alt="Sponsor Ad Space" loading="lazy"></a></div></div>
+            </div>
+          </div>
+        </div><!-- /lg:grid -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Mobile Sponsor Panel -->
+  <button class="sponsor-panel-trigger lg:hidden" aria-label="View sponsorship info">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+    Highlights
+  </button>
+  <div class="sponsor-panel-overlay"></div>
+  <div class="sponsor-panel-drawer">
+    <div class="sponsor-panel-drawer-header">
+      <h3>Sponsorship & Highlights</h3>
+      <button class="sponsor-panel-close" aria-label="Close panel"><svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+    </div>
+    <div class="sponsor-panel-body">
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-warm-charcoal/5 mb-4">
+        <h4 class="font-display font-bold text-warm-ink mb-3 text-sm">SSWBCON 2026 Highlights</h4>
+        <ul class="space-y-2.5 text-sm text-warm-charcoal/80">
+          <li class="flex items-start gap-2.5"><span>📅</span><span><strong>Date:</strong> June 20–22, 2026</span></li>
+          <li class="flex items-start gap-2.5"><span>📍</span><span><strong>Venue:</strong> Kolkata Convention Centre</span></li>
+          <li class="flex items-start gap-2.5"><span>🎤</span><span><strong>Speakers:</strong> 30+ Faculty</span></li>
+          <li class="flex items-start gap-2.5"><span>🔬</span><span><strong>Workshops:</strong> 4 Hands-On</span></li>
+          <li class="flex items-start gap-2.5"><span>🏆</span><span><strong>Awards:</strong> ₹50,000</span></li>
+        </ul>
+        <a href="register.html" class="btn-primary w-full text-center mt-4 block text-sm">Register Now</a>
+      </div>
+      <div class="sidebar-ad-block">
+        <div class="ad-placeholder"><a href="sponsorship.html" aria-label="Sponsor ad space"><img src="../images/ads/sponsor-placeholder.svg" alt="Sponsor Ad Space" loading="lazy"></a></div></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-warm-ink text-white py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+      <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
+        <div class="col-span-2 md:col-span-1">
+          <div class="flex items-center gap-3">
+            <img src="../images/logo.jpeg" alt="SSWBCON 2026" class="h-12 w-auto rounded-lg">
+            <div>
+              <span class="font-display font-bold text-lg">SSWBCON</span>
+              <span class="text-xs text-warm-gold ml-1 block sm:inline">2026</span>
+            </div>
+          </div>
+          <p class="text-white/60 mt-4 text-sm leading-relaxed">
+            Annual Conference of Spine Society of West Bengal. June 20-22, 2026 at Kolkata.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-display font-bold text-warm-gold mb-3 sm:mb-4 text-sm sm:text-base">Quick Links</h4>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li><a href="program.html" class="hover:text-white transition-colors">Program</a></li>
+            <li><a href="committee.html" class="hover:text-white transition-colors">Committee</a></li>
+            <li><a href="tariff.html" class="hover:text-white transition-colors">Tariff</a></li>
+            <li><a href="register.html" class="hover:text-white transition-colors">Register</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display font-bold text-warm-gold mb-3 sm:mb-4 text-sm sm:text-base">Resources</h4>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li><a href="submit.html" class="hover:text-white transition-colors">Submit Abstract</a></li>
+            <li><a href="sponsorship.html" class="hover:text-white transition-colors">Become a Sponsor</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display font-bold text-warm-gold mb-3 sm:mb-4 text-sm sm:text-base">Contact</h4>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li><a href="mailto:spine@sswbcon.in" class="hover:text-white transition-colors">spine@sswbcon.in</a></li>
+            <li><a href="tel:+919123051221" class="hover:text-white transition-colors">+91 91230 51221</a></li>
+            <li>Kolkata, West Bengal</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-8 sm:mt-10 lg:mt-12 pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
+        <p class="text-sm text-white/50">© 2026 SSWBCON. All rights reserved.</p>
+        <div class="flex items-center gap-4 text-sm text-white/50">
+          <a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+          <span>|</span>
+          <a href="refund-policy.html" class="hover:text-white transition-colors">Refund & Cancellation</a>
+          <span>|</span>
+          <a href="https://sswb.in/" target="_blank" rel="noopener" class="text-warm-gold hover:text-white transition-colors">SSWB</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    // ============================================================
+    // STALL DIRECTORY DATA — Edit this array to add/update stalls
+    // ============================================================
+    const stallData = [
+      // { stall: 'S01', company: 'Company Name', tier: 'Platinum', status: 'booked' },
+      // { stall: 'S02', company: '',              tier: 'Gold',     status: 'available' },
+      { stall: 'S01', company: '', tier: 'Platinum', status: 'available' },
+      { stall: 'S02', company: '', tier: 'Platinum', status: 'available' },
+      { stall: 'S03', company: '', tier: 'Gold', status: 'available' },
+      { stall: 'S04', company: '', tier: 'Gold', status: 'available' },
+      { stall: 'S05', company: '', tier: 'Gold', status: 'available' },
+      { stall: 'S06', company: '', tier: 'Silver', status: 'available' },
+      { stall: 'S07', company: '', tier: 'Silver', status: 'available' },
+      { stall: 'S08', company: '', tier: 'Silver', status: 'available' },
+      { stall: 'S09', company: '', tier: 'Silver', status: 'available' },
+      { stall: 'S10', company: '', tier: 'Silver', status: 'available' },
+      { stall: 'S11', company: '', tier: 'Exhibitor', status: 'available' },
+      { stall: 'S12', company: '', tier: 'Exhibitor', status: 'available' },
+      { stall: 'S13', company: '', tier: 'Exhibitor', status: 'available' },
+      { stall: 'S14', company: '', tier: 'Exhibitor', status: 'available' },
+      { stall: 'S15', company: '', tier: 'Exhibitor', status: 'available' },
+      { stall: 'S16', company: '', tier: 'Exhibitor', status: 'available' },
+      { stall: 'S17', company: '', tier: 'Exhibitor', status: 'available' },
+      { stall: 'S18', company: '', tier: 'Exhibitor', status: 'available' },
+      { stall: 'S19', company: '', tier: 'Exhibitor', status: 'available' },
+      { stall: 'S20', company: '', tier: 'Exhibitor', status: 'available' },
+    ];
+
+    function renderStalls(filter = '') {
+      const tbody = document.getElementById('stallBody');
+      const noResults = document.getElementById('noResults');
+      const q = filter.toLowerCase().trim();
+      const filtered = stallData.filter(s =>
+        s.stall.toLowerCase().includes(q) ||
+        s.company.toLowerCase().includes(q) ||
+        s.tier.toLowerCase().includes(q)
+      );
+
+      if (filtered.length === 0) {
+        tbody.innerHTML = '';
+        noResults.classList.remove('hidden');
+        return;
+      }
+      noResults.classList.add('hidden');
+
+      tbody.innerHTML = filtered.map(s => `
+        <tr>
+          <td><span class="stall-number">${s.stall}</span></td>
+          <td><span class="stall-company ${s.company ? '' : 'empty'}">${s.company || '— Available for booking'}</span></td>
+          <td><span class="stall-tier">${s.tier}</span></td>
+          <td class="text-center">
+            <span class="stall-badge ${s.status}">${s.status === 'booked' ? '✓ Booked' : '○ Available'}</span>
+          </td>
+        </tr>
+      `).join('');
+    }
+
+    document.getElementById('stallSearch').addEventListener('input', (e) => {
+      renderStalls(e.target.value);
+    });
+
+    // Initial render
+    renderStalls();
+  </script>
+</body>
+</html>

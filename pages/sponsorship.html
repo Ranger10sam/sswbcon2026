@@ -13,6 +13,7 @@
     tailwind.config = {
       theme: {
         extend: {
+          screens: { nav: '1170px' },
           colors: {
             warm: { cream: '#FDF8F3', sand: '#F5EBE0', terracotta: '#C8553D', coral: '#E07A5F', sage: '#4A7C59', forest: '#2D5A3D', gold: '#D4A574', bronze: '#A67C52', charcoal: '#2C2C2C', ink: '#1A1A1A' }
           },
@@ -33,27 +34,88 @@
           <p class="font-display font-bold text-warm-charcoal text-sm">SSWBCON</p>
         </div>
       </a>
-      <nav class="hidden lg:flex items-center gap-6 text-sm font-medium">
+      <nav class="hidden nav:flex items-center gap-6 xl:gap-8 text-sm font-medium">
         <a href="../index.html" class="nav-link">Home</a>
-        <a href="program.html" class="nav-link">Program</a>
-        <a href="committee.html" class="nav-link">Committee</a>
-        <a href="tariff.html" class="nav-link">Tariff</a>
-        <a href="submit.html" class="nav-link">Abstract</a>
-        <a href="sponsorship.html" class="nav-link is-active">Sponsors</a>
+        <div class="nav-dropdown">
+          <a href="committee.html" class="nav-link">About
+            <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="about.html">About SSWB</a>
+            <a href="about.html#presidents-desk">President's Desk</a>
+            <a href="committee.html">Organising Committee</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="program.html" class="nav-link">Scientific Program
+            <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="program.html">Program Schedule</a>
+            <a href="submit.html">Submit Abstract</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="tariff.html" class="nav-link">Registration
+            <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="tariff.html">Registration Tariff</a>
+            <a href="register.html">Register Online</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="sponsorship.html" class="nav-link is-active">Sponsorship
+            <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="sponsorship.html" class="is-active">Sponsorship Tariff</a>
+            <a href="floorplan.html">Stall Allocation Plan</a>
+          </div>
+        </div>
         <a href="contact.html" class="nav-link">Contact</a>
         <a href="register.html" class="btn-primary">Register</a>
       </nav>
-      <button class="menu-button lg:hidden" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <button class="menu-button nav:hidden" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
-    <div class="mobile-drawer lg:hidden">
+    <div class="mobile-drawer nav:hidden">
       <nav>
-        <a href="../index.html">Home</a><a href="program.html">Program</a><a href="committee.html">Committee</a>
-        <a href="tariff.html">Tariff</a><a href="submit.html">Submit Abstract</a><a href="sponsorship.html">Sponsors</a>
-        <a href="contact.html">Contact</a><a href="register.html" class="btn-primary">Register Now</a>
+        <a href="../index.html">Home</a>
+        <div class="mobile-nav-group">
+          <button class="mobile-nav-toggle">About <svg class="toggle-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
+          <div class="mobile-nav-submenu">
+            <a href="about.html">About SSWB</a>
+            <a href="about.html#presidents-desk">President's Desk</a>
+            <a href="committee.html">Organising Committee</a>
+          </div>
+        </div>
+        <div class="mobile-nav-group">
+          <button class="mobile-nav-toggle">Scientific Program <svg class="toggle-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
+          <div class="mobile-nav-submenu">
+            <a href="program.html">Program Schedule</a>
+            <a href="submit.html">Submit Abstract</a>
+          </div>
+        </div>
+        <div class="mobile-nav-group">
+          <button class="mobile-nav-toggle">Registration <svg class="toggle-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
+          <div class="mobile-nav-submenu">
+            <a href="tariff.html">Registration Tariff</a>
+            <a href="register.html">Register Online</a>
+          </div>
+        </div>
+        <div class="mobile-nav-group">
+          <button class="mobile-nav-toggle">Sponsorship <svg class="toggle-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
+          <div class="mobile-nav-submenu">
+            <a href="sponsorship.html">Sponsorship Tariff</a>
+            <a href="floorplan.html">Stall Allocation Plan</a>
+          </div>
+        </div>
+        <a href="contact.html">Contact</a>
+        <a href="register.html" class="btn-primary">Register Now</a>
       </nav>
     </div>
   </header>
-  <div class="menu-overlay lg:hidden"></div>
+  <div class="menu-overlay nav:hidden"></div>
   <main>
     <section class="hero-banner relative overflow-hidden">
       <picture class="banner-bg">
@@ -74,7 +136,7 @@
     <!-- Marquee -->
     <div class="page-marquee">
       <div class="page-marquee-content">
-        <span class="page-marquee-item">🎯 Early Bird Ends May 31, 2026</span>
+  <span class="page-marquee-item">🔬 Cadaveric Workshop Available</span>
         <span class="page-marquee-divider"></span>
         <span class="page-marquee-item">📍 Kolkata Convention Centre</span>
         <span class="page-marquee-divider"></span>
@@ -84,7 +146,7 @@
         <span class="page-marquee-divider"></span>
         <span class="page-marquee-item">👥 500+ Spine Surgeons Expected</span>
         <span class="page-marquee-divider"></span>
-        <span class="page-marquee-item">🎯 Early Bird Ends May 31, 2026</span>
+  <span class="page-marquee-item">🔬 Cadaveric Workshop Available</span>
         <span class="page-marquee-divider"></span>
         <span class="page-marquee-item">📍 Kolkata Convention Centre</span>
         <span class="page-marquee-divider"></span>
@@ -99,64 +161,204 @@
 
     <section class="py-16 bg-warm-cream">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-        <div class="grid sm:grid-cols-4 gap-4 mb-12">
-          <div class="bg-white rounded-2xl p-6 text-center shadow-sm">
-            <p class="font-display text-4xl font-bold text-warm-terracotta">500+</p>
-            <p class="text-warm-charcoal/70 mt-1 text-sm">Spine Surgeons</p>
+        <div class="lg:grid lg:grid-cols-3 lg:gap-12">
+          <div class="lg:col-span-2">
+        <h2 class="font-display text-2xl font-bold text-warm-ink mb-8 text-center">SSWBCON 2025 Sponsorship Tariff</h2>
+
+        <div class="space-y-10">
+          <div>
+            <h3 class="font-display text-xl font-bold text-warm-ink mb-4">Stall & Add-ons</h3>
+            <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-4">
+              <div class="bg-white rounded-2xl p-6 shadow-sm border border-warm-terracotta/10">
+                <div class="flex items-center justify-between">
+                  <p class="text-xs uppercase tracking-wide text-warm-terracotta">Large Stall + Workshop</p>
+                  <span class="text-xs font-semibold text-warm-terracotta">6 slots</span>
+                </div>
+                <p class="font-display text-2xl font-bold text-warm-ink mt-2">₹8 Lacs</p>
+                <p class="text-sm text-warm-charcoal/70 mt-2">Benefits: 8+8 Lunch / 4 Dinner</p>
+              </div>
+              <div class="bg-white rounded-2xl p-6 shadow-sm border border-warm-gold/20">
+                <div class="flex items-center justify-between">
+                  <p class="text-xs uppercase tracking-wide text-warm-gold">Large Stall</p>
+                  <span class="text-xs font-semibold text-warm-gold">4 slots</span>
+                </div>
+                <p class="font-display text-2xl font-bold text-warm-ink mt-2">₹5 Lacs</p>
+                <p class="text-sm text-warm-charcoal/70 mt-2">Benefits: 5+5 Lunch / 3 Dinner</p>
+              </div>
+              <div class="bg-white rounded-2xl p-6 shadow-sm border border-warm-sage/20">
+                <div class="flex items-center justify-between">
+                  <p class="text-xs uppercase tracking-wide text-warm-sage">Medium Stall</p>
+                  <span class="text-xs font-semibold text-warm-sage">3 slots</span>
+                </div>
+                <p class="font-display text-2xl font-bold text-warm-ink mt-2">₹3 Lacs</p>
+                <p class="text-sm text-warm-charcoal/70 mt-2">Benefits: 3+3 Lunch / 1 Dinner</p>
+              </div>
+              <div class="bg-white rounded-2xl p-6 shadow-sm border border-warm-bronze/20">
+                <div class="flex items-center justify-between">
+                  <p class="text-xs uppercase tracking-wide text-warm-bronze">Small Stall</p>
+                  <span class="text-xs font-semibold text-warm-bronze">2 slots</span>
+                </div>
+                <p class="font-display text-2xl font-bold text-warm-ink mt-2">₹1 Lac</p>
+                <p class="text-sm text-warm-charcoal/70 mt-2">Benefits: 2+2 Lunch</p>
+              </div>
+            </div>
           </div>
-          <div class="bg-white rounded-2xl p-6 text-center shadow-sm">
-            <p class="font-display text-4xl font-bold text-warm-sage">50+</p>
-            <p class="text-warm-charcoal/70 mt-1 text-sm">Hospitals</p>
+
+          <div>
+            <h3 class="font-display text-xl font-bold text-warm-ink mb-4">Mandatory by Stall (Cost Extra)</h3>
+            <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-4">
+              <div class="bg-warm-sand rounded-2xl p-6 border border-warm-charcoal/10">
+                <div class="flex items-center justify-between">
+                  <p class="font-semibold text-warm-ink">Lunch Symposium</p>
+                  <span class="text-xs font-semibold text-warm-charcoal/60">1 slot</span>
+                </div>
+                <p class="font-display text-xl font-bold text-warm-terracotta mt-2">₹2 Lacs</p>
+                <p class="text-sm text-warm-charcoal/70 mt-2">Benefits: 2+2 Lunch / 1 Dinner</p>
+              </div>
+              <div class="bg-warm-sand rounded-2xl p-6 border border-warm-charcoal/10">
+                <div class="flex items-center justify-between">
+                  <p class="font-semibold text-warm-ink">Banquet Dinner</p>
+                  <span class="text-xs font-semibold text-warm-charcoal/60">2 slots</span>
+                </div>
+                <p class="font-display text-xl font-bold text-warm-terracotta mt-2">₹3 Lacs</p>
+                <p class="text-sm text-warm-charcoal/70 mt-2">Benefits: 2+2 Lunch / 3 Dinner</p>
+              </div>
+              <div class="bg-warm-sand rounded-2xl p-6 border border-warm-charcoal/10">
+                <div class="flex items-center justify-between">
+                  <p class="font-semibold text-warm-ink">Faculty Dinner</p>
+                  <span class="text-xs font-semibold text-warm-charcoal/60">1 slot</span>
+                </div>
+                <p class="font-display text-xl font-bold text-warm-terracotta mt-2">₹2 Lacs</p>
+                <p class="text-sm text-warm-charcoal/70 mt-2">Benefits: 2+2 Lunch / 2 Dinner</p>
+              </div>
+              <div class="bg-warm-sand rounded-2xl p-6 border border-warm-charcoal/10">
+                <div class="flex items-center justify-between">
+                  <p class="font-semibold text-warm-ink">Conference Kit</p>
+                  <span class="text-xs font-semibold text-warm-charcoal/60">1 slot</span>
+                </div>
+                <p class="font-display text-xl font-bold text-warm-terracotta mt-2">₹2.5 Lacs</p>
+                <p class="text-sm text-warm-charcoal/70 mt-2">Benefits: 3+3 Lunch / 1 Dinner</p>
+              </div>
+              <div class="bg-warm-sand rounded-2xl p-6 border border-warm-charcoal/10">
+                <div class="flex items-center justify-between">
+                  <p class="font-semibold text-warm-ink">Chair Cover (per day)</p>
+                  <span class="text-xs font-semibold text-warm-charcoal/60">1 slot</span>
+                </div>
+                <p class="font-display text-xl font-bold text-warm-terracotta mt-2">₹75K</p>
+                <p class="text-sm text-warm-charcoal/70 mt-2">Benefits: 1+1 Lunch</p>
+              </div>
+              <div class="bg-warm-sand rounded-2xl p-6 border border-warm-charcoal/10">
+                <div class="flex items-center justify-between">
+                  <p class="font-semibold text-warm-ink">Session Sponsor (per session)</p>
+                  <span class="text-xs font-semibold text-warm-charcoal/60">No slots</span>
+                </div>
+                <p class="font-display text-xl font-bold text-warm-terracotta mt-2">₹50K</p>
+                <p class="text-sm text-warm-charcoal/70 mt-2">Benefits: 1+1 Lunch</p>
+              </div>
+              <div class="bg-warm-sand rounded-2xl p-6 border border-warm-charcoal/10">
+                <div class="flex items-center justify-between">
+                  <p class="font-semibold text-warm-ink">Website Sponsor</p>
+                  <span class="text-xs font-semibold text-warm-charcoal/60">2 slots</span>
+                </div>
+                <p class="font-display text-xl font-bold text-warm-terracotta mt-2">₹2 Lacs</p>
+                <p class="text-sm text-warm-charcoal/70 mt-2">Benefits: 2+2 Lunch / 1 Dinner</p>
+              </div>
+            </div>
           </div>
-          <div class="bg-white rounded-2xl p-6 text-center shadow-sm">
-            <p class="font-display text-4xl font-bold text-warm-gold">₹500Cr+</p>
-            <p class="text-warm-charcoal/70 mt-1 text-sm">Buying Power</p>
-          </div>
-          <div class="bg-white rounded-2xl p-6 text-center shadow-sm">
-            <p class="font-display text-4xl font-bold text-warm-forest">10+</p>
-            <p class="text-warm-charcoal/70 mt-1 text-sm">States</p>
+
+          <div class="bg-white rounded-2xl p-6 border border-warm-charcoal/10 shadow-sm">
+            <h3 class="font-display text-xl font-bold text-warm-ink mb-4">Additional Information</h3>
+            <ul class="space-y-3 text-sm text-warm-charcoal/80">
+              <li>✔ Sponsorships above ₹3 Lacs (total) include a complimentary half-page display in the souvenir.</li>
+              <li>✔ ₹50K extra: Front cover inside page + 2 registrations.</li>
+              <li>✔ ₹50K extra: Back cover outside + 2 registrations.</li>
+              <li>✔ ₹40K extra: Back cover inside + 2 registrations.</li>
+            </ul>
           </div>
         </div>
-        <h2 class="font-display text-2xl font-bold text-warm-ink mb-8 text-center">Sponsorship Tiers</h2>
-        <div class="grid md:grid-cols-4 gap-4">
-          <div class="bg-gradient-to-br from-slate-700 to-slate-900 rounded-2xl p-6 text-white">
-            <span class="text-xs uppercase text-slate-300">Platinum</span>
-            <p class="font-display text-3xl font-bold mt-2">₹10L</p>
-            <p class="text-slate-400 text-sm">Exclusive (1 only)</p>
-            <ul class="mt-4 space-y-2 text-sm"><li>✓ Title sponsorship</li><li>✓ Logo on all materials</li><li>✓ Prime booth</li><li>✓ 5 delegate passes</li><li>✓ Keynote slot</li></ul>
+          </div><!-- /lg:col-span-2 -->
+
+          <!-- Sidebar (desktop only) -->
+          <div class="hidden lg:block sponsor-sidebar">
+            <div class="space-y-6">
+              <div class="bg-white rounded-2xl p-6 shadow-sm border border-warm-charcoal/5">
+                <h3 class="font-display font-bold text-warm-ink mb-4">SSWBCON 2026 Highlights</h3>
+                <ul class="space-y-3 text-sm text-warm-charcoal/80">
+                  <li class="flex items-start gap-3"><span>📅</span><span><strong>Date:</strong> June 20–22, 2026</span></li>
+                  <li class="flex items-start gap-3"><span>📍</span><span><strong>Venue:</strong> Kolkata Convention Centre</span></li>
+                  <li class="flex items-start gap-3"><span>🎤</span><span><strong>Speakers:</strong> 30+ National & International</span></li>
+                  <li class="flex items-start gap-3"><span>🔬</span><span><strong>Workshops:</strong> 4 Hands-On Sessions</span></li>
+                  <li class="flex items-start gap-3"><span>🏆</span><span><strong>Awards:</strong> Best Paper ₹50,000</span></li>
+                </ul>
+                <a href="register.html" class="btn-primary w-full text-center mt-6 block text-sm">Register Now</a>
+              </div>
+              <div class="sidebar-ad-block">
+                <div class="ad-placeholder"><a href="sponsorship.html" aria-label="Sponsor ad space"><img src="../images/ads/sponsor-placeholder.svg" alt="Sponsor Ad Space" loading="lazy"></a></div>
+              </div>
+            </div>
           </div>
-          <div class="bg-gradient-to-br from-amber-600 to-amber-800 rounded-2xl p-6 text-white">
-            <span class="text-xs uppercase text-amber-200">Gold</span>
-            <p class="font-display text-3xl font-bold mt-2">₹5L</p>
-            <p class="text-amber-200 text-sm">3 available</p>
-            <ul class="mt-4 space-y-2 text-sm"><li>✓ Logo on banners</li><li>✓ Premium booth</li><li>✓ 3 delegate passes</li><li>✓ Session sponsorship</li></ul>
-          </div>
-          <div class="bg-gradient-to-br from-gray-400 to-gray-600 rounded-2xl p-6 text-white">
-            <span class="text-xs uppercase text-gray-200">Silver</span>
-            <p class="font-display text-3xl font-bold mt-2">₹3L</p>
-            <p class="text-gray-200 text-sm">5 available</p>
-            <ul class="mt-4 space-y-2 text-sm"><li>✓ Logo on materials</li><li>✓ Standard booth</li><li>✓ 2 delegate passes</li></ul>
-          </div>
-          <div class="bg-white rounded-2xl p-6 border border-warm-charcoal/10">
-            <span class="text-xs uppercase text-warm-bronze">Exhibitor</span>
-            <p class="font-display text-3xl font-bold mt-2 text-warm-ink">₹1L</p>
-            <p class="text-warm-charcoal/60 text-sm">Multiple available</p>
-            <ul class="mt-4 space-y-2 text-sm text-warm-charcoal"><li>✓ Exhibition booth</li><li>✓ 2 delegate passes</li><li>✓ Kit insert</li></ul>
-          </div>
-        </div>
+        </div><!-- /lg:grid -->
       </div>
     </section>
     <section class="py-16 bg-warm-sand">
       <div class="max-w-7xl mx-auto px-4 text-center">
         <h2 class="font-display text-2xl font-bold text-warm-ink mb-4">Ready to Partner?</h2>
-        <p class="text-warm-charcoal/80 mb-6">Contact us for customized packages.</p>
-        <a href="mailto:spine@sswbcon.in" class="btn-primary">Email Us</a>
+        <p class="text-warm-charcoal/80 mb-6">Contact us for customized packages or download our sponsorship brochure.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-3">
+          <a href="mailto:spine@sswbcon.in" class="btn-primary">Email Us</a>
+          <a href="../docs/SSWBCON2026-Sponsorship-Brochure.pdf" target="_blank" class="inline-flex items-center justify-center gap-2 border-2 border-warm-terracotta text-warm-terracotta font-semibold px-6 py-3 rounded-full hover:bg-warm-terracotta hover:text-white transition-colors text-sm">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
+            Download Brochure
+          </a>
+          <a href="floorplan.html" class="inline-flex items-center justify-center gap-2 border-2 border-warm-charcoal/20 text-warm-charcoal font-semibold px-6 py-3 rounded-full hover:bg-warm-charcoal hover:text-white transition-colors text-sm">
+            View Floor Plan
+          </a>
+        </div>
       </div>
     </section>
   </main>
+
+  <!-- Mobile Sponsor Panel -->
+  <button class="sponsor-panel-trigger lg:hidden" aria-label="View sponsorship info">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+    Highlights
+  </button>
+  <div class="sponsor-panel-overlay"></div>
+  <div class="sponsor-panel-drawer">
+    <div class="sponsor-panel-drawer-header">
+      <h3>Sponsorship & Highlights</h3>
+      <button class="sponsor-panel-close" aria-label="Close panel"><svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+    </div>
+    <div class="sponsor-panel-body">
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-warm-charcoal/5 mb-4">
+        <h4 class="font-display font-bold text-warm-ink mb-3 text-sm">SSWBCON 2026 Highlights</h4>
+        <ul class="space-y-2.5 text-sm text-warm-charcoal/80">
+          <li class="flex items-start gap-2.5"><span>📅</span><span><strong>Date:</strong> June 20–22, 2026</span></li>
+          <li class="flex items-start gap-2.5"><span>📍</span><span><strong>Venue:</strong> Kolkata Convention Centre</span></li>
+          <li class="flex items-start gap-2.5"><span>🎤</span><span><strong>Speakers:</strong> 30+ Faculty</span></li>
+          <li class="flex items-start gap-2.5"><span>🔬</span><span><strong>Workshops:</strong> 4 Hands-On</span></li>
+          <li class="flex items-start gap-2.5"><span>🏆</span><span><strong>Awards:</strong> ₹50,000</span></li>
+        </ul>
+        <a href="register.html" class="btn-primary w-full text-center mt-4 block text-sm">Register Now</a>
+      </div>
+      <div class="sidebar-ad-block">
+        <div class="ad-placeholder"><a href="sponsorship.html" aria-label="Sponsor ad space"><img src="../images/ads/sponsor-placeholder.svg" alt="Sponsor Ad Space" loading="lazy"></a></div>
+      </div>
+    </div>
+  </div>
+
   <footer class="bg-warm-ink text-white py-12">
     <div class="max-w-7xl mx-auto px-4 text-center">
       <p class="text-sm text-white/50">© 2026 SSWBCON. All rights reserved.</p>
+      <div class="flex justify-center items-center gap-4 text-sm text-white/50 mt-3">
+        <a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+        <span>|</span>
+        <a href="refund-policy.html" class="hover:text-white transition-colors">Refund & Cancellation</a>
+        <span>|</span>
+        <a href="https://sswb.in/" target="_blank" rel="noopener" class="text-warm-gold hover:text-white transition-colors">SSWB</a>
+      </div>
     </div>
   </footer>
   <script src="../js/main.js"></script>

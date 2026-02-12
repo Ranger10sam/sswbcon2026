@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registration Tariff | SSWBCON 2026</title>
-  <meta name="description" content="Registration fees and packages for SSWBCON 2026 - Annual Conference of Spine Society of West Bengal. Early bird discounts available.">
+  <meta name="description" content="Registration fees and packages for SSWBCON 2026 - Annual Conference of Spine Society of West Bengal.">
   <meta name="keywords" content="SSWBCON 2026, Registration Fees, Conference Tariff, Spine Surgery Conference">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +14,7 @@
     tailwind.config = {
       theme: {
         extend: {
+          screens: { nav: '1170px' },
           colors: {
             warm: {
               cream: '#FDF8F3',
@@ -49,34 +50,90 @@
           <p class="font-display font-bold text-warm-charcoal text-sm">SSWBCON</p>
         </div>
       </a>
-      <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-sm font-medium">
+      <nav class="hidden nav:flex items-center gap-6 xl:gap-8 text-sm font-medium">
         <a href="../index.html" class="nav-link">Home</a>
-        <a href="program.html" class="nav-link">Program</a>
-        <a href="committee.html" class="nav-link">Committee</a>
-        <a href="tariff.html" class="nav-link is-active">Tariff</a>
-        <a href="submit.html" class="nav-link">Abstract</a>
-        <a href="sponsorship.html" class="nav-link">Sponsors</a>
+        <div class="nav-dropdown">
+          <a href="committee.html" class="nav-link">About
+            <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="about.html">About SSWB</a>
+            <a href="about.html#presidents-desk">President's Desk</a>
+            <a href="committee.html">Organising Committee</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="program.html" class="nav-link">Scientific Program
+            <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="program.html">Program Schedule</a>
+            <a href="submit.html">Submit Abstract</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="tariff.html" class="nav-link is-active">Registration
+            <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="tariff.html">Registration Tariff</a>
+            <a href="register.html">Register Online</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="sponsorship.html" class="nav-link">Sponsorship
+            <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="sponsorship.html">Sponsorship Tariff</a>
+            <a href="floorplan.html">Stall Allocation Plan</a>
+          </div>
+        </div>
         <a href="contact.html" class="nav-link">Contact</a>
         <a href="register.html" class="btn-primary">Register</a>
       </nav>
-      <button class="menu-button lg:hidden" aria-label="Toggle menu">
+      <button class="menu-button nav:hidden" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <div class="mobile-drawer lg:hidden">
+    <div class="mobile-drawer nav:hidden">
       <nav>
         <a href="../index.html">Home</a>
-        <a href="program.html">Program</a>
-        <a href="committee.html">Committee</a>
-        <a href="tariff.html">Tariff</a>
-        <a href="submit.html">Submit Abstract</a>
-        <a href="sponsorship.html">Sponsors</a>
+        <div class="mobile-nav-group">
+          <button class="mobile-nav-toggle">About <svg class="toggle-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
+          <div class="mobile-nav-submenu">
+            <a href="about.html">About SSWB</a>
+            <a href="about.html#presidents-desk">President's Desk</a>
+            <a href="committee.html">Organising Committee</a>
+          </div>
+        </div>
+        <div class="mobile-nav-group">
+          <button class="mobile-nav-toggle">Scientific Program <svg class="toggle-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
+          <div class="mobile-nav-submenu">
+            <a href="program.html">Program Schedule</a>
+            <a href="submit.html">Submit Abstract</a>
+          </div>
+        </div>
+        <div class="mobile-nav-group">
+          <button class="mobile-nav-toggle">Registration <svg class="toggle-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
+          <div class="mobile-nav-submenu">
+            <a href="tariff.html">Registration Tariff</a>
+            <a href="register.html">Register Online</a>
+          </div>
+        </div>
+        <div class="mobile-nav-group">
+          <button class="mobile-nav-toggle">Sponsorship <svg class="toggle-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
+          <div class="mobile-nav-submenu">
+            <a href="sponsorship.html">Sponsorship Tariff</a>
+            <a href="floorplan.html">Stall Allocation Plan</a>
+          </div>
+        </div>
         <a href="contact.html">Contact</a>
         <a href="register.html" class="btn-primary">Register Now</a>
       </nav>
     </div>
   </header>
-  <div class="menu-overlay lg:hidden"></div>
+  <div class="menu-overlay nav:hidden"></div>
 
   <main>
     <!-- Hero Banner -->
@@ -88,7 +145,6 @@
       <div class="banner-content-wrapper">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
           <div class="banner-content max-w-3xl">
-            <p class="eyebrow text-warm-gold mb-3 sm:mb-4 text-xs sm:text-sm">Early Bird Until May 31, 2026</p>
             <h1 class="banner-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl">Registration Tariff</h1>
             <p class="banner-subtitle text-base sm:text-lg mt-4 sm:mt-6 text-white/85 max-w-xl">
               All fees include GST. Register early for discounted rates and guaranteed workshop access.
@@ -101,23 +157,19 @@
     <!-- Marquee -->
     <div class="page-marquee">
       <div class="page-marquee-content">
-        <span class="page-marquee-item">🎯 Early Bird Ends May 31, 2026</span>
-        <span class="page-marquee-divider"></span>
         <span class="page-marquee-item">📍 Kolkata Convention Centre</span>
         <span class="page-marquee-divider"></span>
         <span class="page-marquee-item">🏆 Best Paper Awards Worth ₹50,000</span>
         <span class="page-marquee-divider"></span>
-        <span class="page-marquee-item">🔬 4 Hands-On Workshops</span>
+        <span class="page-marquee-item">🔬 Cadaveric Workshop Available</span>
         <span class="page-marquee-divider"></span>
         <span class="page-marquee-item">👥 500+ Spine Surgeons Expected</span>
         <span class="page-marquee-divider"></span>
-        <span class="page-marquee-item">🎯 Early Bird Ends May 31, 2026</span>
-        <span class="page-marquee-divider"></span>
         <span class="page-marquee-item">📍 Kolkata Convention Centre</span>
         <span class="page-marquee-divider"></span>
         <span class="page-marquee-item">🏆 Best Paper Awards Worth ₹50,000</span>
         <span class="page-marquee-divider"></span>
-        <span class="page-marquee-item">🔬 4 Hands-On Workshops</span>
+        <span class="page-marquee-item">🔬 Cadaveric Workshop Available</span>
         <span class="page-marquee-divider"></span>
         <span class="page-marquee-item">👥 500+ Spine Surgeons Expected</span>
         <span class="page-marquee-divider"></span>
@@ -127,189 +179,222 @@
     <!-- Registration Packages -->
     <section class="py-12 sm:py-16 lg:py-24 bg-warm-cream">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-        <!-- Early Bird Notice -->
-        <div class="bg-gradient-to-r from-warm-gold/20 to-warm-terracotta/20 border border-warm-gold/30 rounded-2xl p-4 sm:p-6 mb-10 sm:mb-12 reveal">
-          <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
-            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-warm-gold flex items-center justify-center flex-shrink-0">
-              <svg class="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              </svg>
-            </div>
-            <div class="flex-1">
-              <h3 class="font-display font-bold text-warm-ink text-base sm:text-lg">Early Bird Deadline: May 31, 2026</h3>
-              <p class="text-warm-charcoal/70 text-sm mt-1">Register before May 31 to avail discounted early bird pricing. Group discounts available for 5+ registrations from the same institution.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Pricing Cards -->
-        <div class="grid md:grid-cols-3 gap-4 sm:gap-6 reveal">
-          <!-- PG Students -->
-          <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow border border-warm-charcoal/5">
-            <div class="p-5 sm:p-6 lg:p-8">
-              <div class="flex items-center gap-3 mb-4">
-                <div class="w-10 h-10 rounded-xl bg-warm-sage/10 flex items-center justify-center">
-                  <svg class="w-5 h-5 text-warm-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 14l9-5-9-5-9 5 9 5z"/>
-                    <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"/>
-                  </svg>
-                </div>
-                <h3 class="font-display font-bold text-warm-ink text-lg">PG Students</h3>
-              </div>
-              <div class="mb-6">
-                <div class="flex items-baseline gap-2">
-                  <span class="font-display text-3xl sm:text-4xl font-bold text-warm-sage">₹2,500</span>
-                  <span class="text-warm-charcoal/50 text-sm line-through">₹3,500</span>
-                </div>
-                <p class="text-warm-charcoal/60 text-sm mt-1">Early Bird Price</p>
-              </div>
-              <ul class="space-y-3 mb-6 text-sm">
-                <li class="flex items-center gap-2">
-                  <svg class="w-5 h-5 text-warm-sage flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                  <span>Access to all scientific sessions</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg class="w-5 h-5 text-warm-sage flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                  <span>Conference kit & lunch</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg class="w-5 h-5 text-warm-sage flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                  <span>CME credit certificate</span>
-                </li>
-                <li class="flex items-center gap-2 text-warm-charcoal/50">
-                  <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-                  <span>Gala dinner (add ₹1,500)</span>
-                </li>
-              </ul>
-              <a href="register.html" class="block w-full text-center py-3 px-4 rounded-xl border-2 border-warm-sage text-warm-sage font-semibold hover:bg-warm-sage hover:text-white transition-colors text-sm sm:text-base">
-                Register as Student
-              </a>
-              <p class="text-xs text-warm-charcoal/50 mt-3 text-center">Valid ID required at registration</p>
-            </div>
-          </div>
-
-          <!-- Consultants / Faculty - Featured -->
-          <div class="bg-gradient-to-br from-warm-terracotta to-warm-coral rounded-2xl overflow-hidden shadow-lg relative transform md:-translate-y-4">
-            <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1 rounded-full">
+        <div class="lg:grid lg:grid-cols-3 lg:gap-12">
+          <div class="lg:col-span-2">
+        
+        <!-- Pricing Cards - Row Layout -->
+        <div class="space-y-5 reveal">
+          <!-- Delegates - Featured -->
+          <div class="bg-gradient-to-br from-warm-terracotta to-warm-coral rounded-2xl overflow-hidden shadow-lg relative">
+            <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1.5 rounded-full">
               Most Popular
             </div>
-            <div class="p-5 sm:p-6 lg:p-8 text-white">
-              <div class="flex items-center gap-3 mb-4">
-                <div class="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center">
-                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                  </svg>
+            <div class="p-5 sm:p-6 text-white">
+              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <div class="flex-1">
+                  <div class="flex items-center gap-3 mb-3">
+                    <div class="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center flex-shrink-0">
+                      <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="font-display font-bold text-lg">Delegates</h3>
+                      <p class="text-white/80 text-sm">Consultants / Faculty</p>
+                    </div>
+                  </div>
+                  <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm mt-4">
+                    <li class="flex items-center gap-2">
+                      <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                      <span>All scientific sessions</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                      <span>Premium kit & lunch</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                      <span>Gala dinner included</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                      <span>CME certificate</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                      <span>Priority workshop access</span>
+                    </li>
+                  </ul>
                 </div>
-                <h3 class="font-display font-bold text-lg">Consultants / Faculty</h3>
-              </div>
-              <div class="mb-6">
-                <div class="flex items-baseline gap-2">
-                  <span class="font-display text-3xl sm:text-4xl font-bold">₹5,000</span>
-                  <span class="text-white/60 text-sm line-through">₹7,000</span>
+                <div class="flex sm:flex-col items-center sm:items-end gap-4 sm:gap-3 border-t sm:border-t-0 sm:border-l border-white/20 pt-4 sm:pt-0 sm:pl-6">
+                  <div class="text-left sm:text-right">
+                    <div class="flex items-baseline gap-2 justify-start sm:justify-end">
+                      <span class="font-display text-3xl sm:text-4xl font-bold">₹5,000</span>
+                    </div>
+                  </div>
+                  <a href="register.html" class="inline-flex items-center justify-center px-6 py-2.5 rounded-xl bg-white text-warm-terracotta font-semibold hover:bg-warm-cream transition-colors text-sm whitespace-nowrap">
+                    Register Now
+                  </a>
                 </div>
-                <p class="text-white/80 text-sm mt-1">Early Bird Price</p>
               </div>
-              <ul class="space-y-3 mb-6 text-sm">
-                <li class="flex items-center gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                  <span>Access to all scientific sessions</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                  <span>Premium conference kit & lunch</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                  <span>Gala dinner included</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                  <span>CME credit certificate</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                  <span>Priority workshop registration</span>
-                </li>
-              </ul>
-              <a href="register.html" class="block w-full text-center py-3 px-4 rounded-xl bg-white text-warm-terracotta font-semibold hover:bg-warm-cream transition-colors text-sm sm:text-base">
-                Register as Consultant
-              </a>
             </div>
           </div>
 
           <!-- SSWB Members -->
-          <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow border border-warm-charcoal/5">
-            <div class="p-5 sm:p-6 lg:p-8">
-              <div class="flex items-center gap-3 mb-4">
-                <div class="w-10 h-10 rounded-xl bg-warm-gold/10 flex items-center justify-center">
-                  <svg class="w-5 h-5 text-warm-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
-                  </svg>
+          <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-warm-gold/20">
+            <div class="p-5 sm:p-6">
+              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <div class="flex-1">
+                  <div class="flex items-center gap-3 mb-3">
+                    <div class="w-10 h-10 rounded-xl bg-warm-gold/10 flex items-center justify-center flex-shrink-0">
+                      <svg class="w-5 h-5 text-warm-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="font-display font-bold text-warm-ink text-lg">SSWB Members</h3>
+                      <p class="text-warm-charcoal/60 text-sm">Member Discount <span class="text-xs">(Verification required)</span></p>
+                    </div>
+                  </div>
+                  <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm mt-4 text-warm-charcoal/80">
+                    <li class="flex items-center gap-2">
+                      <svg class="w-4 h-4 text-warm-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                      <span>All scientific sessions</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <svg class="w-4 h-4 text-warm-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                      <span>Conference kit & lunch</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <svg class="w-4 h-4 text-warm-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                      <span>Gala dinner included</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <svg class="w-4 h-4 text-warm-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                      <span>CME certificate</span>
+                    </li>
+                  </ul>
                 </div>
-                <h3 class="font-display font-bold text-warm-ink text-lg">SSWB Members</h3>
-              </div>
-              <div class="mb-6">
-                <div class="flex items-baseline gap-2">
-                  <span class="font-display text-3xl sm:text-4xl font-bold text-warm-gold">₹3,500</span>
-                  <span class="text-warm-charcoal/50 text-sm line-through">₹5,000</span>
+                <div class="flex sm:flex-col items-center sm:items-end gap-4 sm:gap-3 border-t sm:border-t-0 sm:border-l border-warm-charcoal/10 pt-4 sm:pt-0 sm:pl-6">
+                  <div class="text-left sm:text-right">
+                    <div class="flex items-baseline gap-2 justify-start sm:justify-end">
+                      <span class="font-display text-3xl sm:text-4xl font-bold text-warm-gold">₹4,000</span>
+                    </div>
+                  </div>
+                  <a href="register.html" class="inline-flex items-center justify-center px-6 py-2.5 rounded-xl border-2 border-warm-gold text-warm-gold font-semibold hover:bg-warm-gold hover:text-white transition-colors text-sm whitespace-nowrap">
+                    Register Now
+                  </a>
                 </div>
-                <p class="text-warm-charcoal/60 text-sm mt-1">Member Discount</p>
               </div>
-              <ul class="space-y-3 mb-6 text-sm">
-                <li class="flex items-center gap-2">
-                  <svg class="w-5 h-5 text-warm-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                  <span>Access to all scientific sessions</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg class="w-5 h-5 text-warm-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                  <span>Conference kit & lunch</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg class="w-5 h-5 text-warm-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                  <span>Gala dinner included</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg class="w-5 h-5 text-warm-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                  <span>CME credit certificate</span>
-                </li>
-              </ul>
-              <a href="register.html" class="block w-full text-center py-3 px-4 rounded-xl border-2 border-warm-gold text-warm-gold font-semibold hover:bg-warm-gold hover:text-white transition-colors text-sm sm:text-base">
-                Register as Member
-              </a>
-              <p class="text-xs text-warm-charcoal/50 mt-3 text-center">Membership verification required</p>
+            </div>
+          </div>
+
+          <!-- PG / Spouse / Accompanying Person -->
+          <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-warm-sage/20">
+            <div class="p-5 sm:p-6">
+              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <div class="flex-1">
+                  <div class="flex items-center gap-3 mb-3">
+                    <div class="w-10 h-10 rounded-xl bg-warm-sage/10 flex items-center justify-center flex-shrink-0">
+                      <svg class="w-5 h-5 text-warm-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 14l9-5-9-5-9 5 9 5z"/>
+                        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="font-display font-bold text-warm-ink text-lg">PG / Spouse / Accompanying Person</h3>
+                      <p class="text-warm-charcoal/60 text-sm">Students & Companions <span class="text-xs">(Valid ID required)</span></p>
+                    </div>
+                  </div>
+                  <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm mt-4 text-warm-charcoal/80">
+                    <li class="flex items-center gap-2">
+                      <svg class="w-4 h-4 text-warm-sage flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                      <span>All scientific sessions</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <svg class="w-4 h-4 text-warm-sage flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                      <span>Conference kit & lunch</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <svg class="w-4 h-4 text-warm-sage flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                      <span>Gala dinner included</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <svg class="w-4 h-4 text-warm-sage flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                      <span>CME certificate</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="flex sm:flex-col items-center sm:items-end gap-4 sm:gap-3 border-t sm:border-t-0 sm:border-l border-warm-charcoal/10 pt-4 sm:pt-0 sm:pl-6">
+                  <div class="text-left sm:text-right">
+                    <div class="flex items-baseline gap-2 justify-start sm:justify-end">
+                      <span class="font-display text-3xl sm:text-4xl font-bold text-warm-sage">₹3,000</span>
+                    </div>
+                  </div>
+                  <a href="register.html" class="inline-flex items-center justify-center px-6 py-2.5 rounded-xl border-2 border-warm-sage text-warm-sage font-semibold hover:bg-warm-sage hover:text-white transition-colors text-sm whitespace-nowrap">
+                    Register Now
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Workshop Add-on -->
+        <!-- Cadaveric Workshop Add-on -->
         <div class="mt-8 sm:mt-12 reveal">
           <div class="bg-warm-sand rounded-2xl p-5 sm:p-6 lg:p-8">
-            <h3 class="font-display text-xl sm:text-2xl font-bold text-warm-ink mb-4 sm:mb-6">Workshop Registration (Add-on)</h3>
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-              <div class="bg-white rounded-xl p-4 shadow-sm">
-                <h4 class="font-bold text-warm-ink text-sm sm:text-base">Cervical Cadaver</h4>
-                <p class="text-warm-terracotta font-display font-bold text-lg mt-1">₹8,000</p>
-                <p class="text-warm-charcoal/60 text-xs mt-1">Limited: 20 seats</p>
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
+              <div>
+                <h3 class="font-display text-xl sm:text-2xl font-bold text-warm-ink">Cadaveric Workshop (Add-on)</h3>
+                <p class="text-warm-charcoal/70 text-sm mt-1">Hands-on cadaveric dissection and surgical techniques</p>
               </div>
-              <div class="bg-white rounded-xl p-4 shadow-sm">
-                <h4 class="font-bold text-warm-ink text-sm sm:text-base">MIS Lumbar</h4>
-                <p class="text-warm-terracotta font-display font-bold text-lg mt-1">₹5,000</p>
-                <p class="text-warm-charcoal/60 text-xs mt-1">Limited: 30 seats</p>
-              </div>
-              <div class="bg-white rounded-xl p-4 shadow-sm">
-                <h4 class="font-bold text-warm-ink text-sm sm:text-base">Pedicle Screw</h4>
-                <p class="text-warm-terracotta font-display font-bold text-lg mt-1">₹4,000</p>
-                <p class="text-warm-charcoal/60 text-xs mt-1">Limited: 40 seats</p>
-              </div>
-              <div class="bg-white rounded-xl p-4 shadow-sm">
-                <h4 class="font-bold text-warm-ink text-sm sm:text-base">Spinal Injections</h4>
-                <p class="text-warm-terracotta font-display font-bold text-lg mt-1">₹3,000</p>
-                <p class="text-warm-charcoal/60 text-xs mt-1">Limited: 25 seats</p>
+              <div class="text-left sm:text-right">
+                <p class="text-warm-terracotta font-display font-bold text-2xl sm:text-3xl">₹2,000</p>
+                <p class="text-warm-charcoal/60 text-xs mt-1">For all categories</p>
               </div>
             </div>
+            <ul class="grid sm:grid-cols-2 gap-3 text-sm text-warm-charcoal/80">
+              <li class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-warm-terracotta flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>Hands-on cadaveric dissection</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-warm-terracotta flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>Expert faculty guidance</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-warm-terracotta flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>Limited to 30 participants</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-warm-terracotta flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>Workshop certificate included</span>
+              </li>
+            </ul>
           </div>
         </div>
+          </div><!-- /lg:col-span-2 -->
+
+          <!-- Sidebar (desktop only) -->
+          <div class="hidden lg:block sponsor-sidebar">
+            <div class="space-y-6">
+              <div class="bg-white rounded-2xl p-6 shadow-sm border border-warm-charcoal/5 reveal">
+                <h3 class="font-display font-bold text-warm-ink mb-4">SSWBCON 2026 Highlights</h3>
+                <ul class="space-y-3 text-sm text-warm-charcoal/80">
+                  <li class="flex items-start gap-3"><span>📅</span><span><strong>Date:</strong> June 20–22, 2026</span></li>
+                  <li class="flex items-start gap-3"><span>📍</span><span><strong>Venue:</strong> Kolkata Convention Centre</span></li>
+                  <li class="flex items-start gap-3"><span>🎤</span><span><strong>Speakers:</strong> 30+ National & International</span></li>
+                  <li class="flex items-start gap-3"><span>🔬</span><span><strong>Workshops:</strong> 4 Hands-On Sessions</span></li>
+                  <li class="flex items-start gap-3"><span>🏆</span><span><strong>Awards:</strong> Best Paper ₹50,000</span></li>
+                </ul>
+                <a href="register.html" class="btn-primary w-full text-center mt-6 block text-sm">Register Now</a>
+              </div>
+              <div class="sidebar-ad-block reveal">
+                <div class="ad-placeholder"><a href="sponsorship.html" aria-label="Sponsor ad space"><img src="../images/ads/sponsor-placeholder.svg" alt="Sponsor Ad Space" loading="lazy"></a></div></div>
+            </div>
+          </div>
+        </div><!-- /lg:grid -->
       </div>
     </section>
 
@@ -379,6 +464,34 @@
     </section>
   </main>
 
+  <!-- Mobile Sponsor Panel -->
+  <button class="sponsor-panel-trigger lg:hidden" aria-label="View sponsorship info">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+    Highlights
+  </button>
+  <div class="sponsor-panel-overlay"></div>
+  <div class="sponsor-panel-drawer">
+    <div class="sponsor-panel-drawer-header">
+      <h3>Sponsorship & Highlights</h3>
+      <button class="sponsor-panel-close" aria-label="Close panel"><svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+    </div>
+    <div class="sponsor-panel-body">
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-warm-charcoal/5 mb-4">
+        <h4 class="font-display font-bold text-warm-ink mb-3 text-sm">SSWBCON 2026 Highlights</h4>
+        <ul class="space-y-2.5 text-sm text-warm-charcoal/80">
+          <li class="flex items-start gap-2.5"><span>📅</span><span><strong>Date:</strong> June 20–22, 2026</span></li>
+          <li class="flex items-start gap-2.5"><span>📍</span><span><strong>Venue:</strong> Kolkata Convention Centre</span></li>
+          <li class="flex items-start gap-2.5"><span>🎤</span><span><strong>Speakers:</strong> 30+ Faculty</span></li>
+          <li class="flex items-start gap-2.5"><span>🔬</span><span><strong>Workshops:</strong> 4 Hands-On</span></li>
+          <li class="flex items-start gap-2.5"><span>🏆</span><span><strong>Awards:</strong> ₹50,000</span></li>
+        </ul>
+        <a href="register.html" class="btn-primary w-full text-center mt-4 block text-sm">Register Now</a>
+      </div>
+      <div class="sidebar-ad-block">
+        <div class="ad-placeholder"><a href="sponsorship.html" aria-label="Sponsor ad space"><img src="../images/ads/sponsor-placeholder.svg" alt="Sponsor Ad Space" loading="lazy"></a></div></div>
+    </div>
+  </div>
+
   <footer class="bg-warm-ink text-white py-10 sm:py-12 lg:py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
       <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10">
@@ -420,7 +533,13 @@
       </div>
       <div class="border-t border-white/10 mt-8 sm:mt-10 lg:mt-12 pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
         <p class="text-sm text-white/50">© 2026 SSWBCON. All rights reserved.</p>
-        <a href="https://sswb.in/" target="_blank" rel="noopener" class="text-sm text-warm-gold hover:text-white transition-colors">Spine Society of West Bengal</a>
+        <div class="flex items-center gap-4 text-sm text-white/50">
+          <a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+          <span>|</span>
+          <a href="refund-policy.html" class="hover:text-white transition-colors">Refund & Cancellation</a>
+          <span>|</span>
+          <a href="https://sswb.in/" target="_blank" rel="noopener" class="text-warm-gold hover:text-white transition-colors">SSWB</a>
+        </div>
       </div>
     </div>
   </footer>

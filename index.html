@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
@@ -14,6 +14,7 @@
     tailwind.config = {
       theme: {
         extend: {
+          screens: { nav: '1170px' },
           colors: {
             warm: {
               cream: '#FDF8F3',
@@ -48,34 +49,90 @@
           <p class="font-display font-bold text-warm-charcoal text-sm">SSWBCON</p>
         </div>
       </a>
-      <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-sm font-medium">
+      <nav class="hidden nav:flex items-center gap-6 xl:gap-8 text-sm font-medium">
         <a href="index.html" class="nav-link is-active">Home</a>
-        <a href="pages/program.html" class="nav-link">Program</a>
-        <a href="pages/committee.html" class="nav-link">Committee</a>
-        <a href="pages/tariff.html" class="nav-link">Tariff</a>
-        <a href="pages/submit.html" class="nav-link">Abstract</a>
-        <a href="pages/sponsorship.html" class="nav-link">Sponsors</a>
+        <div class="nav-dropdown">
+          <a href="pages/committee.html" class="nav-link">About
+            <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="pages/about.html">About SSWB</a>
+            <a href="pages/about.html#presidents-desk">President's Desk</a>
+            <a href="pages/committee.html">Organising Committee</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="pages/program.html" class="nav-link">Scientific Program
+            <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="pages/program.html">Program Schedule</a>
+            <a href="pages/submit.html">Submit Abstract</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="pages/tariff.html" class="nav-link">Registration
+            <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="pages/tariff.html">Registration Tariff</a>
+            <a href="pages/register.html">Register Online</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="pages/sponsorship.html" class="nav-link">Sponsorship
+            <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="pages/sponsorship.html">Sponsorship Tariff</a>
+            <a href="pages/floorplan.html">Stall Allocation Plan</a>
+          </div>
+        </div>
         <a href="pages/contact.html" class="nav-link">Contact</a>
         <a href="pages/register.html" class="btn-primary">Register</a>
       </nav>
-      <button class="menu-button lg:hidden" aria-label="Toggle menu">
+      <button class="menu-button nav:hidden" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <div class="mobile-drawer lg:hidden">
+    <div class="mobile-drawer nav:hidden">
       <nav>
         <a href="index.html">Home</a>
-        <a href="pages/program.html">Program</a>
-        <a href="pages/committee.html">Committee</a>
-        <a href="pages/tariff.html">Tariff</a>
-        <a href="pages/submit.html">Submit Abstract</a>
-        <a href="pages/sponsorship.html">Sponsors</a>
+        <div class="mobile-nav-group">
+          <button class="mobile-nav-toggle">About <svg class="toggle-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
+          <div class="mobile-nav-submenu">
+            <a href="pages/about.html">About SSWB</a>
+            <a href="pages/about.html#presidents-desk">President's Desk</a>
+            <a href="pages/committee.html">Organising Committee</a>
+          </div>
+        </div>
+        <div class="mobile-nav-group">
+          <button class="mobile-nav-toggle">Scientific Program <svg class="toggle-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
+          <div class="mobile-nav-submenu">
+            <a href="pages/program.html">Program Schedule</a>
+            <a href="pages/submit.html">Submit Abstract</a>
+          </div>
+        </div>
+        <div class="mobile-nav-group">
+          <button class="mobile-nav-toggle">Registration <svg class="toggle-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
+          <div class="mobile-nav-submenu">
+            <a href="pages/tariff.html">Registration Tariff</a>
+            <a href="pages/register.html">Register Online</a>
+          </div>
+        </div>
+        <div class="mobile-nav-group">
+          <button class="mobile-nav-toggle">Sponsorship <svg class="toggle-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
+          <div class="mobile-nav-submenu">
+            <a href="pages/sponsorship.html">Sponsorship Tariff</a>
+            <a href="pages/floorplan.html">Stall Allocation Plan</a>
+          </div>
+        </div>
         <a href="pages/contact.html">Contact</a>
         <a href="pages/register.html" class="btn-primary">Register Now</a>
       </nav>
     </div>
   </header>
-  <div class="menu-overlay lg:hidden"></div>
+  <div class="menu-overlay nav:hidden"></div>
 
   <main>
     <!-- Hero Section -->
@@ -91,7 +148,7 @@
             <svg class="w-4 h-4 mr-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
             </svg>
-            June 20-22, 2026 • Kolkata
+            June 20-22, 2026 � Kolkata
           </span>
           <h1 class="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mt-4 sm:mt-6 reveal">
             Where Spine Care<br class="hidden sm:block">Meets Heritage
@@ -125,7 +182,7 @@
               The Spine Society of West Bengal brings together eminent spine surgeons from across India and the world. SSWBCON 2026 continues our tradition of excellence in spine education, research, and surgical innovation.
             </p>
             <p class="text-warm-charcoal/80 mt-3 sm:mt-4 text-base sm:text-lg leading-relaxed">
-              Experience world-class scientific sessions alongside the rich cultural heritage of Kolkata—the City of Joy.
+              Experience world-class scientific sessions alongside the rich cultural heritage of Kolkata�the City of Joy.
             </p>
             <a href="pages/program.html" class="btn-tertiary mt-6 inline-flex items-center">
               Explore the Program
@@ -226,68 +283,156 @@
           <p class="text-warm-charcoal/70 mt-3 sm:mt-4 max-w-xl text-sm sm:text-base">Eminent spine surgeons from across India and the world.</p>
         </div>
       </div>
-      <!-- Auto-scrolling speakers carousel -->
+
+      <!-- DESKTOP: Honeycomb Grid (hidden below lg) -->
+      <div class="hidden lg:block">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-12">
+          <div class="honeycomb-grid reveal">
+            <!-- Row 1: 4 hexagons -->
+            <div class="honeycomb-row">
+              <div class="hex-cell" style="--delay: 0">
+                <div class="hex-inner">
+                  <img src="images/speakers/abrarahmed.png" alt="Dr. Abrar Ahmed" loading="lazy">
+                  <div class="hex-overlay">
+                    <h3 class="hex-name">Dr. Abrar Ahmed</h3>
+                    <p class="hex-role">President, SSWB</p>
+                  </div>
+                </div>
+              </div>
+              <div class="hex-cell" style="--delay: 1">
+                <div class="hex-inner">
+                  <img src="images/speakers/kunalsengupta.png" alt="Dr. Kunal Sengupta" loading="lazy">
+                  <div class="hex-overlay">
+                    <h3 class="hex-name">Dr. Kunal Sengupta</h3>
+                    <p class="hex-role">Past President, SSWB</p>
+                  </div>
+                </div>
+              </div>
+              <div class="hex-cell" style="--delay: 2">
+                <div class="hex-inner">
+                  <img src="images/speakers/saumyajitbasu.png" alt="Dr. Saumyajit Basu" loading="lazy">
+                  <div class="hex-overlay">
+                    <h3 class="hex-name">Dr. Saumyajit Basu</h3>
+                    <p class="hex-role">Imm. Past President</p>
+                  </div>
+                </div>
+              </div>
+              <div class="hex-cell" style="--delay: 3">
+                <div class="hex-inner">
+                  <img src="images/speakers/kirankumarmukhopadhyay.png" alt="Dr. Kiran Kumar Mukhopadhyay" loading="lazy">
+                  <div class="hex-overlay">
+                    <h3 class="hex-name">Dr. Kiran K. Mukhopadhyay</h3>
+                    <p class="hex-role">Executive Committee</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Row 2: 3 hexagons (offset) -->
+            <div class="honeycomb-row honeycomb-row-offset">
+              <div class="hex-cell" style="--delay: 4">
+                <div class="hex-inner">
+                  <img src="images/speakers/dineshkumarjaiswal.png" alt="Dr. Dinesh Kumar Jaiswal" loading="lazy">
+                  <div class="hex-overlay">
+                    <h3 class="hex-name">Dr. Dinesh K. Jaiswal</h3>
+                    <p class="hex-role">Secretary, SSWB</p>
+                  </div>
+                </div>
+              </div>
+              <div class="hex-cell" style="--delay: 5">
+                <div class="hex-inner">
+                  <img src="images/speakers/chinmaynath.png" alt="Dr. Chinmay Nath" loading="lazy">
+                  <div class="hex-overlay">
+                    <h3 class="hex-name">Dr. Chinmay Nath</h3>
+                    <p class="hex-role">Joint Secretary, SSWB</p>
+                  </div>
+                </div>
+              </div>
+              <div class="hex-cell" style="--delay: 6">
+                <div class="hex-inner">
+                  <img src="images/speakers/christophergerber.png" alt="Dr. Christopher Gerber" loading="lazy">
+                  <div class="hex-overlay">
+                    <h3 class="hex-name">Dr. Christopher Gerber</h3>
+                    <p class="hex-role">International Faculty</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Row 3: 4 hexagons -->
+            <div class="honeycomb-row">
+              <div class="hex-cell" style="--delay: 7">
+                <div class="hex-inner">
+                  <img src="images/speakers/prashantbaid.png" alt="Dr. Prashant Baid" loading="lazy">
+                  <div class="hex-overlay">
+                    <h3 class="hex-name">Dr. Prashant Baid</h3>
+                    <p class="hex-role">Faculty</p>
+                  </div>
+                </div>
+              </div>
+              <div class="hex-cell" style="--delay: 8">
+                <div class="hex-inner">
+                  <img src="images/speakers/sanjoybiswas.png" alt="Dr. Sanjoy Biswas" loading="lazy">
+                  <div class="hex-overlay">
+                    <h3 class="hex-name">Dr. Sanjoy Biswas</h3>
+                    <p class="hex-role">Faculty</p>
+                  </div>
+                </div>
+              </div>
+              <div class="hex-cell" style="--delay: 9">
+                <div class="hex-inner">
+                  <img src="images/speakers/joydeepmalik.png" alt="Dr. Joydeep Malik" loading="lazy">
+                  <div class="hex-overlay">
+                    <h3 class="hex-name">Dr. Joydeep Malik</h3>
+                    <p class="hex-role">Faculty</p>
+                  </div>
+                </div>
+              </div>
+              <div class="hex-cell" style="--delay: 10">
+                <div class="hex-inner">
+                  <img src="images/speakers/vikashanasoge.png" alt="Dr. Vikash Anasoge" loading="lazy">
+                  <div class="hex-overlay">
+                    <h3 class="hex-name">Dr. Vikash Anasoge</h3>
+                    <p class="hex-role">Faculty</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOBILE/TABLET: Carousel (hidden at lg+) -->
+      <div class="lg:hidden">
+      <!-- Auto-scrolling speakers carousel — Row 1 (scroll left) -->
       <div class="speakers-carousel-wrapper reveal">
-        <div class="speakers-carousel my-5">
-          <!-- Faculty Set 1 -->
+        <div class="speakers-carousel speakers-row-left my-3">
           <div class="speaker-card">
             <div class="speaker-image">
               <img src="images/speakers/abrarahmed.png" alt="Dr. Abrar Ahmed" loading="lazy">
             </div>
-            <div class="p-4 sm:p-5">
-              <h3 class="font-display font-bold text-warm-ink text-sm sm:text-base">Dr. Abrar Ahmed</h3>
-              <p class="text-warm-terracotta text-xs sm:text-sm mt-1">President, SSWB</p>
-              <p class="text-warm-charcoal/60 text-xs sm:text-sm mt-1">Co-Organising Chairman</p>
+            <div class="p-3 sm:p-4">
+              <h3 class="font-display font-bold text-warm-ink text-xs sm:text-sm">Dr. Abrar Ahmed</h3>
+              <p class="text-warm-terracotta text-[10px] sm:text-xs mt-0.5">President, SSWB</p>
+              <p class="text-warm-charcoal/60 text-[10px] sm:text-xs mt-0.5">Co-Organising Chairman</p>
             </div>
           </div>
           <div class="speaker-card">
             <div class="speaker-image">
               <img src="images/speakers/kunalsengupta.png" alt="Dr. Kunal Sengupta" loading="lazy">
             </div>
-            <div class="p-4 sm:p-5">
-              <h3 class="font-display font-bold text-warm-ink text-sm sm:text-base">Dr. Kunal Sengupta</h3>
-              <p class="text-warm-terracotta text-xs sm:text-sm mt-1">Past President, SSWB</p>
-              <p class="text-warm-charcoal/60 text-xs sm:text-sm mt-1">Patron</p>
+            <div class="p-3 sm:p-4">
+              <h3 class="font-display font-bold text-warm-ink text-xs sm:text-sm">Dr. Kunal Sengupta</h3>
+              <p class="text-warm-terracotta text-[10px] sm:text-xs mt-0.5">Past President, SSWB</p>
+              <p class="text-warm-charcoal/60 text-[10px] sm:text-xs mt-0.5">Patron</p>
             </div>
           </div>
           <div class="speaker-card">
             <div class="speaker-image">
               <img src="images/speakers/saumyajitbasu.png" alt="Dr. Saumyajit Basu" loading="lazy">
             </div>
-            <div class="p-4 sm:p-5">
-              <h3 class="font-display font-bold text-warm-ink text-sm sm:text-base">Dr. Saumyajit Basu</h3>
-              <p class="text-warm-terracotta text-xs sm:text-sm mt-1">Immediate Past President</p>
-              <p class="text-warm-charcoal/60 text-xs sm:text-sm mt-1">Patron</p>
-            </div>
-          </div>
-          <div class="speaker-card">
-            <div class="speaker-image">
-              <img src="images/speakers/kirankumarmukhopadhyay.png" alt="Dr. Kiran Kumar Mukhopadhyay" loading="lazy">
-            </div>
-            <div class="p-4 sm:p-5">
-              <h3 class="font-display font-bold text-warm-ink text-sm sm:text-base">Dr. Kiran Kumar Mukhopadhyay</h3>
-              <p class="text-warm-terracotta text-xs sm:text-sm mt-1">Executive Committee</p>
-              <p class="text-warm-charcoal/60 text-xs sm:text-sm mt-1">Co-Organising Chairman</p>
-            </div>
-          </div>
-          <div class="speaker-card">
-            <div class="speaker-image">
-              <img src="images/speakers/dineshkumarjaiswal.png" alt="Dr. Dinesh Kumar Jaiswal" loading="lazy">
-            </div>
-            <div class="p-4 sm:p-5">
-              <h3 class="font-display font-bold text-warm-ink text-sm sm:text-base">Dr. Dinesh Kumar Jaiswal</h3>
-              <p class="text-warm-terracotta text-xs sm:text-sm mt-1">Secretary, SSWB</p>
-              <p class="text-warm-charcoal/60 text-xs sm:text-sm mt-1">Co-Organising Secretary</p>
-            </div>
-          </div>
-          <div class="speaker-card">
-            <div class="speaker-image">
-              <img src="images/speakers/chinmaynath.png" alt="Dr. Chinmay Nath" loading="lazy">
-            </div>
-            <div class="p-4 sm:p-5">
-              <h3 class="font-display font-bold text-warm-ink text-sm sm:text-base">Dr. Chinmay Nath</h3>
-              <p class="text-warm-terracotta text-xs sm:text-sm mt-1">Joint Secretary, SSWB</p>
-              <p class="text-warm-charcoal/60 text-xs sm:text-sm mt-1">Co-Organising Secretary</p>
+            <div class="p-3 sm:p-4">
+              <h3 class="font-display font-bold text-warm-ink text-xs sm:text-sm">Dr. Saumyajit Basu</h3>
+              <p class="text-warm-terracotta text-[10px] sm:text-xs mt-0.5">Immediate Past President</p>
+              <p class="text-warm-charcoal/60 text-[10px] sm:text-xs mt-0.5">Patron</p>
             </div>
           </div>
           <!-- Duplicate for seamless loop -->
@@ -295,66 +440,104 @@
             <div class="speaker-image">
               <img src="images/speakers/abrarahmed.png" alt="Dr. Abrar Ahmed" loading="lazy">
             </div>
-            <div class="p-4 sm:p-5">
-              <h3 class="font-display font-bold text-warm-ink text-sm sm:text-base">Dr. Abrar Ahmed</h3>
-              <p class="text-warm-terracotta text-xs sm:text-sm mt-1">President, SSWB</p>
-              <p class="text-warm-charcoal/60 text-xs sm:text-sm mt-1">Co-Organising Chairman</p>
+            <div class="p-3 sm:p-4">
+              <h3 class="font-display font-bold text-warm-ink text-xs sm:text-sm">Dr. Abrar Ahmed</h3>
+              <p class="text-warm-terracotta text-[10px] sm:text-xs mt-0.5">President, SSWB</p>
+              <p class="text-warm-charcoal/60 text-[10px] sm:text-xs mt-0.5">Co-Organising Chairman</p>
             </div>
           </div>
           <div class="speaker-card">
             <div class="speaker-image">
               <img src="images/speakers/kunalsengupta.png" alt="Dr. Kunal Sengupta" loading="lazy">
             </div>
-            <div class="p-4 sm:p-5">
-              <h3 class="font-display font-bold text-warm-ink text-sm sm:text-base">Dr. Kunal Sengupta</h3>
-              <p class="text-warm-terracotta text-xs sm:text-sm mt-1">Past President, SSWB</p>
-              <p class="text-warm-charcoal/60 text-xs sm:text-sm mt-1">Patron</p>
+            <div class="p-3 sm:p-4">
+              <h3 class="font-display font-bold text-warm-ink text-xs sm:text-sm">Dr. Kunal Sengupta</h3>
+              <p class="text-warm-terracotta text-[10px] sm:text-xs mt-0.5">Past President, SSWB</p>
+              <p class="text-warm-charcoal/60 text-[10px] sm:text-xs mt-0.5">Patron</p>
             </div>
           </div>
           <div class="speaker-card">
             <div class="speaker-image">
               <img src="images/speakers/saumyajitbasu.png" alt="Dr. Saumyajit Basu" loading="lazy">
             </div>
-            <div class="p-4 sm:p-5">
-              <h3 class="font-display font-bold text-warm-ink text-sm sm:text-base">Dr. Saumyajit Basu</h3>
-              <p class="text-warm-terracotta text-xs sm:text-sm mt-1">Immediate Past President</p>
-              <p class="text-warm-charcoal/60 text-xs sm:text-sm mt-1">Patron</p>
+            <div class="p-3 sm:p-4">
+              <h3 class="font-display font-bold text-warm-ink text-xs sm:text-sm">Dr. Saumyajit Basu</h3>
+              <p class="text-warm-terracotta text-[10px] sm:text-xs mt-0.5">Immediate Past President</p>
+              <p class="text-warm-charcoal/60 text-[10px] sm:text-xs mt-0.5">Patron</p>
             </div>
           </div>
+        </div>
+      </div>
+      <!-- Row 2 (scroll right) -->
+      <div class="speakers-carousel-wrapper reveal">
+        <div class="speakers-carousel speakers-row-right my-3">
           <div class="speaker-card">
             <div class="speaker-image">
               <img src="images/speakers/kirankumarmukhopadhyay.png" alt="Dr. Kiran Kumar Mukhopadhyay" loading="lazy">
             </div>
-            <div class="p-4 sm:p-5">
-              <h3 class="font-display font-bold text-warm-ink text-sm sm:text-base">Dr. Kiran Kumar Mukhopadhyay</h3>
-              <p class="text-warm-terracotta text-xs sm:text-sm mt-1">Executive Committee</p>
-              <p class="text-warm-charcoal/60 text-xs sm:text-sm mt-1">Co-Organising Chairman</p>
+            <div class="p-3 sm:p-4">
+              <h3 class="font-display font-bold text-warm-ink text-xs sm:text-sm">Dr. Kiran Kumar Mukhopadhyay</h3>
+              <p class="text-warm-terracotta text-[10px] sm:text-xs mt-0.5">Executive Committee</p>
+              <p class="text-warm-charcoal/60 text-[10px] sm:text-xs mt-0.5">Co-Organising Chairman</p>
             </div>
           </div>
           <div class="speaker-card">
             <div class="speaker-image">
               <img src="images/speakers/dineshkumarjaiswal.png" alt="Dr. Dinesh Kumar Jaiswal" loading="lazy">
             </div>
-            <div class="p-4 sm:p-5">
-              <h3 class="font-display font-bold text-warm-ink text-sm sm:text-base">Dr. Dinesh Kumar Jaiswal</h3>
-              <p class="text-warm-terracotta text-xs sm:text-sm mt-1">Secretary, SSWB</p>
-              <p class="text-warm-charcoal/60 text-xs sm:text-sm mt-1">Co-Organising Secretary</p>
+            <div class="p-3 sm:p-4">
+              <h3 class="font-display font-bold text-warm-ink text-xs sm:text-sm">Dr. Dinesh Kumar Jaiswal</h3>
+              <p class="text-warm-terracotta text-[10px] sm:text-xs mt-0.5">Secretary, SSWB</p>
+              <p class="text-warm-charcoal/60 text-[10px] sm:text-xs mt-0.5">Co-Organising Secretary</p>
             </div>
           </div>
           <div class="speaker-card">
             <div class="speaker-image">
               <img src="images/speakers/chinmaynath.png" alt="Dr. Chinmay Nath" loading="lazy">
             </div>
-            <div class="p-4 sm:p-5">
-              <h3 class="font-display font-bold text-warm-ink text-sm sm:text-base">Dr. Chinmay Nath</h3>
-              <p class="text-warm-terracotta text-xs sm:text-sm mt-1">Joint Secretary, SSWB</p>
-              <p class="text-warm-charcoal/60 text-xs sm:text-sm mt-1">Co-Organising Secretary</p>
+            <div class="p-3 sm:p-4">
+              <h3 class="font-display font-bold text-warm-ink text-xs sm:text-sm">Dr. Chinmay Nath</h3>
+              <p class="text-warm-terracotta text-[10px] sm:text-xs mt-0.5">Joint Secretary, SSWB</p>
+              <p class="text-warm-charcoal/60 text-[10px] sm:text-xs mt-0.5">Co-Organising Secretary</p>
+            </div>
+          </div>
+          <!-- Duplicate for seamless loop -->
+          <div class="speaker-card">
+            <div class="speaker-image">
+              <img src="images/speakers/kirankumarmukhopadhyay.png" alt="Dr. Kiran Kumar Mukhopadhyay" loading="lazy">
+            </div>
+            <div class="p-3 sm:p-4">
+              <h3 class="font-display font-bold text-warm-ink text-xs sm:text-sm">Dr. Kiran Kumar Mukhopadhyay</h3>
+              <p class="text-warm-terracotta text-[10px] sm:text-xs mt-0.5">Executive Committee</p>
+              <p class="text-warm-charcoal/60 text-[10px] sm:text-xs mt-0.5">Co-Organising Chairman</p>
+            </div>
+          </div>
+          <div class="speaker-card">
+            <div class="speaker-image">
+              <img src="images/speakers/dineshkumarjaiswal.png" alt="Dr. Dinesh Kumar Jaiswal" loading="lazy">
+            </div>
+            <div class="p-3 sm:p-4">
+              <h3 class="font-display font-bold text-warm-ink text-xs sm:text-sm">Dr. Dinesh Kumar Jaiswal</h3>
+              <p class="text-warm-terracotta text-[10px] sm:text-xs mt-0.5">Secretary, SSWB</p>
+              <p class="text-warm-charcoal/60 text-[10px] sm:text-xs mt-0.5">Co-Organising Secretary</p>
+            </div>
+          </div>
+          <div class="speaker-card">
+            <div class="speaker-image">
+              <img src="images/speakers/chinmaynath.png" alt="Dr. Chinmay Nath" loading="lazy">
+            </div>
+            <div class="p-3 sm:p-4">
+              <h3 class="font-display font-bold text-warm-ink text-xs sm:text-sm">Dr. Chinmay Nath</h3>
+              <p class="text-warm-terracotta text-[10px] sm:text-xs mt-0.5">Joint Secretary, SSWB</p>
+              <p class="text-warm-charcoal/60 text-[10px] sm:text-xs mt-0.5">Co-Organising Secretary</p>
             </div>
           </div>
         </div>
       </div>
+      </div>
+
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-        <div class="text-left mt-8 sm:mt-10 reveal">
+        <div class="text-center mt-8 sm:mt-10 reveal">
           <a href="pages/committee.html" class="btn-secondary">View All Faculty</a>
         </div>
       </div>
@@ -410,6 +593,18 @@
       </div>
     </section>
 
+    <!-- Sponsor Ad Banner -->
+    <section class="py-10 sm:py-12 lg:py-16 bg-warm-cream">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div class="sponsor-banner-strip reveal">
+          <a href="pages/sponsorship.html" class="sponsor-banner-link" aria-label="Sponsor advertisement space">
+            <img src="images/ads/sponsor-placeholder.svg" alt="Sponsor Ad Space — Your brand here" class="sponsor-banner-img" loading="lazy">
+          </a>
+          <p class="text-center text-warm-charcoal/30 text-[10px] uppercase tracking-widest mt-3 font-medium">Advertisement</p>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="py-16 sm:py-20 lg:py-28 bg-gradient-to-br from-warm-terracotta to-warm-coral">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 text-center">
@@ -418,7 +613,7 @@
             Ready to Join Us?
           </h2>
           <p class="text-white/90 mt-4 sm:mt-6 text-base sm:text-lg max-w-2xl mx-auto">
-            Secure your spot at SSWBCON 2026. Early bird pricing available until May 31, 2026. Limited workshop seats available.
+            Secure your spot at SSWBCON 2026. Limited workshop seats available.
           </p>
           <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 mt-8 sm:mt-10">
             <a href="pages/register.html" class="inline-flex items-center justify-center gap-2 bg-white text-warm-terracotta font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:bg-warm-cream transition-colors">
@@ -435,6 +630,39 @@
       </div>
     </section>
   </main>
+
+  <!-- Mobile Sponsor Panel -->
+  <button class="sponsor-panel-trigger lg:hidden" aria-label="View sponsorship info">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+    Highlights
+  </button>
+  <div class="sponsor-panel-overlay"></div>
+  <div class="sponsor-panel-drawer">
+    <div class="sponsor-panel-drawer-header">
+      <h3>Sponsorship & Highlights</h3>
+      <button class="sponsor-panel-close" aria-label="Close panel"><svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+    </div>
+    <div class="sponsor-panel-body">
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-warm-charcoal/5 mb-4">
+        <h4 class="font-display font-bold text-warm-ink mb-3 text-sm">SSWBCON 2026 Highlights</h4>
+        <ul class="space-y-2.5 text-sm text-warm-charcoal/80">
+          <li class="flex items-start gap-2.5"><span>📅</span><span><strong>Date:</strong> June 20–22, 2026</span></li>
+          <li class="flex items-start gap-2.5"><span>📍</span><span><strong>Venue:</strong> Kolkata Convention Centre</span></li>
+          <li class="flex items-start gap-2.5"><span>🎤</span><span><strong>Speakers:</strong> 30+ Faculty</span></li>
+          <li class="flex items-start gap-2.5"><span>🔬</span><span><strong>Workshops:</strong> 4 Hands-On</span></li>
+          <li class="flex items-start gap-2.5"><span>🏆</span><span><strong>Awards:</strong> ₹50,000</span></li>
+        </ul>
+        <a href="pages/register.html" class="btn-primary w-full text-center mt-4 block text-sm">Register Now</a>
+      </div>
+      <div class="sidebar-ad-block">
+        <div class="ad-placeholder">
+          <a href="pages/sponsorship.html" aria-label="Sponsor ad space">
+            <img src="images/ads/sponsor-placeholder.svg" alt="Sponsor Ad Space" loading="lazy">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer class="bg-warm-ink text-white py-12 sm:py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
@@ -482,8 +710,14 @@
         </div>
       </div>
       <div class="border-t border-white/10 mt-10 sm:mt-12 pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
-        <p class="text-sm text-white/50">© 2026 SSWBCON. All rights reserved.</p>
-        <a href="https://sswb.in/" target="_blank" rel="noopener" class="text-sm text-warm-gold hover:text-white transition-colors">Spine Society of West Bengal</a>
+        <p class="text-sm text-white/50">� 2026 SSWBCON. All rights reserved.</p>
+        <div class="flex items-center gap-4 text-sm text-white/50">
+          <a href="pages/privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+          <span>|</span>
+          <a href="pages/refund-policy.html" class="hover:text-white transition-colors">Refund & Cancellation</a>
+          <span>|</span>
+          <a href="https://sswb.in/" target="_blank" rel="noopener" class="text-warm-gold hover:text-white transition-colors">SSWB</a>
+        </div>
       </div>
     </div>
   </footer>
