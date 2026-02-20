@@ -1,6 +1,6 @@
 # SSWBCON 2026 - Annual Conference Website
 
-The official website for **SSWBCON 2026** - the Annual Conference of Spine Society of West Bengal, scheduled for **June 20-22, 2026** in Kolkata.
+The official website for **SSWBCON 2026** - the Annual Conference of Spine Society of West Bengal, scheduled for **12-14 June 2026** in Kolkata.
 
 ## 🎯 About
 
@@ -101,7 +101,7 @@ The website uses placeholder gradients for hero banners. Refer to `IMAGE_REQUIRE
 ## 📝 Notes
 
 - All forms are static placeholders for demonstration
-- Conference dates: June 20-22, 2026
+- Conference dates: 12-14 June 2026
 - Early bird deadline: May 31, 2026
 - Abstract deadline: April 30, 2026
 

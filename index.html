@@ -135,10 +135,36 @@
   <div class="menu-overlay nav:hidden"></div>
 
   <main>
-    <!-- Hero Section -->
+    <!-- New Video Hero Section -->
+    <section class="hero-video-section relative w-full overflow-hidden" style="background-color: #000;">
+      <!-- CSS Aspect Ratio handling for video container -->
+      <style>
+        .hero-video-container {
+          aspect-ratio: 16 / 9;
+          width: 100%;
+        }
+        .hero-video-container video {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        @media (max-width: 768px) {
+          .hero-video-container {
+            aspect-ratio: 4 / 3;
+          }
+        }
+      </style>
+      <div class="hero-video-container">
+        <video autoplay loop muted playsinline>
+          <source src="images/banners/video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <!-- Old Hero Section (Commented out for now)
     <section class="hero-home">
       <div class="hero-background" data-parallax="0.3">
-        <!-- Placeholder gradient background until hero image is ready -->
         <div class="w-full h-full bg-gradient-to-br from-warm-forest via-warm-charcoal to-warm-terracotta"></div>
         <div class="hero-overlay"></div>
       </div>
@@ -148,7 +174,7 @@
             <svg class="w-4 h-4 mr-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
             </svg>
-            June 20-22, 2026 � Kolkata
+            12-14 June, 2026 • Kolkata
           </span>
           <h1 class="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mt-4 sm:mt-6 reveal">
             Where Spine Care<br class="hidden sm:block">Meets Heritage
@@ -162,12 +188,12 @@
           </div>
         </div>
       </div>
-      <!-- Scroll indicator -->
       <div class="scroll-indicator hidden md:flex">
         <span>Scroll</span>
         <div class="scroll-line"></div>
       </div>
     </section>
+    -->
 
     <!-- About Section -->
     <section class="py-16 sm:py-20 lg:py-28 bg-warm-cream">
@@ -182,7 +208,7 @@
               The Spine Society of West Bengal brings together eminent spine surgeons from across India and the world. SSWBCON 2026 continues our tradition of excellence in spine education, research, and surgical innovation.
             </p>
             <p class="text-warm-charcoal/80 mt-3 sm:mt-4 text-base sm:text-lg leading-relaxed">
-              Experience world-class scientific sessions alongside the rich cultural heritage of Kolkata�the City of Joy.
+              Experience world-class scientific sessions alongside the rich cultural heritage of Kolkata-the City of Joy.
             </p>
             <a href="pages/program.html" class="btn-tertiary mt-6 inline-flex items-center">
               Explore the Program
@@ -676,7 +702,7 @@
             </div>
           </div>
           <p class="text-white/60 mt-4 text-sm leading-relaxed">
-            Annual Conference of Spine Society of West Bengal. June 20-22, 2026 at Kolkata Convention Centre.
+            Annual Conference of Spine Society of West Bengal. 12-14 June 2026 at Kolkata Convention Centre.
           </p>
         </div>
         <div>
@@ -710,7 +736,7 @@
         </div>
       </div>
       <div class="border-t border-white/10 mt-10 sm:mt-12 pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
-        <p class="text-sm text-white/50">� 2026 SSWBCON. All rights reserved.</p>
+        <p class="text-sm text-white/50">- 2026 SSWBCON. All rights reserved.</p>
         <div class="flex items-center gap-4 text-sm text-white/50">
           <a href="pages/privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a>
           <span>|</span>
